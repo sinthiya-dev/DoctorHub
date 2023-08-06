@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoctorHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- <div class="back_2_top">
+    <i>top</i>
+</div> -->
+    <section id="header">
+        <div class="container lg_con">
+          <div class="row justify-content-between align-items-center ">
+            <div class=" col-md-7 col-lg-7">
+                <span>Welcome to DoctorHub</span>
+            </div>
+            <div class="col-md-3 col-lg-3 text-end">
+                <P>+88-01914075276</P>
+            </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg menu_bg">
+      <div class="container align-items-center">
+        <div class="nav_logo">
+          <img src="images/logo.png" width="70" alt="logo"><p>Doctor<span>Hub</span></p>
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+          <ul class="navbar-nav ms-auto  menu_list">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Doctors </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> News & Events 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Blogs 
+              </a>
+            </li>
+           
+          </ul>
+          <button type="button" class="btn nav_button btn-danger">Sign Up</button>                          
+        </div>
+      </div>
+    </nav>
+
+  <!-- banner -->
+  <section id="banner">
+         <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-7">
+                  <div class="ban_txt text-center">
+                         <h1>Make Easy Appointment</h1>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
+                          facilis quidem nisi iusto minus saepe impedit vitae pariatur eum!
+                          Modi sit eaque odio debitis dignissimos repellat tenetur.</p>                
+                         </div>
+                  </div>
+              </div>
+             
+          </div>
+         </div>
+  </section>
+  
+  <!-- search section -->
+<section id="search">
+  <div class="container">
+    <form action="#">
+    <div class="row search_main py-5 justify-content-around">
+      <div class="col-lg-2">
+        <div class="search_inner">
+          <input type="text" class="search_box" placeholder="  Location...">
+        </div>
+      </div>
+      
+      <div class="col-lg-2">
+        <div class="search_inner">
+          <div class="col-lg-2  text-end">
+            <div class="dropdown schedule_drop search_drop">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Schedule <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">morning<p> 7.00am-12.00pm</p></a></li>
+                  <li><a class="dropdown-item" href="#">Evening<p> 7.00am-12.00pm</p></a></li>
+                  <li><a class="dropdown-item" href="#">Night<p> 7.00am-12.00pm</p></a></li>
+                                   
+                </ul>
+             </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="search_inner">
+          <div class="col-lg-2  text-end">
+            <div class="dropdown department_drop search_drop">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Department <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Orthology</a></li>
+                  <li><a class="dropdown-item" href="#">Vacation Tours</a></li>
+                  <li><a class="dropdown-item" href="#">Couple Tours</a></li>
+                  <li><a class="dropdown-item" href="#">Advanture Tours</a></li>
+                  <li><a class="dropdown-item" href="#">Group Tours</a></li>
+                  
+                </ul>
+             </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="search_inner">
+          <div class="search_btn">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Search</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+</section>
+    
+<!-- js links -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>  
+    <script src="js/venobox.min.js"></script> 
+    <script src="js/custom.js"></script>
+</body>
+</html>

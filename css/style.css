@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0; 
+    margin: 0;
+}
+/* heading */
+#header{
+    font-size: 14px;
+    color: #fff;
+    background-color: #304f47;
+}
+#header p{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 14px;
+}
+
+/* menubar */
+/* .menu_bg{
+    position: fixed;    
+    left:0;
+    top: 30px;
+    width: 100%;
+    z-index: 99999999;
+}
+.bg{
+    background: rgba(69, 27, 109, 0.582);
+    color: #f1f1f1;
+    z-index: 9999;
+    animation: sm 3s;
+    -webkit-animation: sm 3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@keyframes sm {
+    from{
+     top: -50px;
+    }
+    to{
+     top: 0px;
+    }
+ } */
+ .nav_logo{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+ .nav_logo p{
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 5px;
+    color: #275732;
+}
+
+.nav_logo span{
+    color: #e27a46;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;   
+}
+
+
+.menu_bg ul li a{ 
+    font-family: 'Montserrat', sans-serif; 
+    color: #000 !important;
+    font-size: 16px !important;
+    font-weight: 500;
+}
+.menu_bg ul li a:hover{
+    color: #e27a46 !important;
+}
+.nav_button{
+    width: 150px;
+}
+/* banner */
+#banner{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/banner.jpg) no-repeat center / cover;
+    padding: 100px 0;
+}
+.ban_txt h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #fff;
+   font-size: 48px;
+   font-weight: bold;
+   padding-bottom: 10px;
+}
+.ban_txt p{
+    padding: 10px 50px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+/* ----search now section---- */
+#search{
+    position: relative;
+}
+.search_main{
+    position: absolute;
+    left: 15%;
+    top: -80px;
+    background-color: rgba(68, 96, 89, 0.932);
+    border-radius:18px;
+    -webkit-border-radius:18px;
+    -moz-border-radius:18px;
+    -ms-border-radius:18px;
+    -o-border-radius:18px;
+}
+.search_box{
+    width:220px;
+    height: 60px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.search_main:first-child .search_inner{
+    margin-left: 10px;
+}
+.search_drop .btn{
+    width: 220px;
+    height: 60px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+.search_drop .btn i{
+    padding-left: 80px;
+}
+.search_drop ul{
+    min-width: 200px !important;
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+}
+.search_drop ul li a{
+   
+    padding: 10px 0 !important;
+    padding-left: 10px !important;
+
+}
+.dropdown-toggle::after {
+  display: none;
+}
+
+.search_btn{
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #304f47;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+}
+.search_btn i{
+    color: #fff;
+}
+.search_btn span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff !important;
+}
+.search_btn:hover{
+    background-color:#e27a46 ;
+}
+.schedule_drop ul li a{
+    border-bottom: 0.5px solid #d6d6d6;
+    color: #e27a46;
+   padding: 5px 20px;
+   font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.department_drop  ul{
+    padding: 0;
+    min-width: 0px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: none;
+}
+.department_drop  ul li a{
+    border-bottom: 0.5px solid #d6d6d6;
+    color: #e27a46;
+   padding: 5px 20px;
+   font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.department_drop  ul li a:hover{
+    background: #e2e2e2;
+}
