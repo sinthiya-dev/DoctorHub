@@ -25,7 +25,6 @@ h1,h2,h3,h4,h5,h6,p{
     background-color: #304f47;
 }
 #header p{
-    font-family: 'Montserrat', sans-serif; 
     font-size: 14px;
 }
 
@@ -92,7 +91,7 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 100px 0;
 }
 .ban_txt h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'mon', sans-serif;
     font-size: 30px;
     color: #fff;
    font-size: 48px;
