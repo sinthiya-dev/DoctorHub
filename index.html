@@ -114,7 +114,7 @@
                    Schedule <i class="fa-solid fa-angle-down"></i>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">morning<p> 7.00am-12.00pm</p></a></li>
+                  <li><a class="dropdown-item" href="#">Morning<p> 7.00am-12.00pm</p></a></li>
                   <li><a class="dropdown-item" href="#">Evening<p> 7.00am-12.00pm</p></a></li>
                   <li><a class="dropdown-item" href="#">Night<p> 7.00am-12.00pm</p></a></li>
                                    
@@ -128,9 +128,10 @@
           <div class="col-lg-2  text-end">
             <div class="dropdown department_drop search_drop">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Department <i class="fa-solid fa-angle-down"></i>
+                   Departments <i class="fa-solid fa-angle-down"></i>
                 </button>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Orthology</a></li>
                   <li><a class="dropdown-item" href="#">Orthology</a></li>
                   <li><a class="dropdown-item" href="#">Vacation Tours</a></li>
                   <li><a class="dropdown-item" href="#">Couple Tours</a></li>
@@ -156,7 +157,68 @@
   </form>
   </div>
 </section>
-    
+    <!-- appointment -->
+<section id="appoint">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3">
+        <div class="categories">
+          <h3>Categories</h3>
+          <form action="#">
+             <input type="radio" id="all" name="categories" value="ALL">
+             <label for="all">All Type</label><br>
+             <input type="radio" id="pro" name="categories" value="PRO">
+             <label for="pro">Professors</label><br>
+             <input type="radio" id="con" name="categories" value="CON">
+             <label for="con">Consultant</label><br>
+             <input type="radio" id="woman" name="categories" value="woman">
+             <label for="woman">Only Woman</label><br><br>
+              <input type="submit" class="cat_sub" value="Find">
+            </form>
+        </div>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="s text-center">
+                  <img src="images/doc1.png" alt="doctor" width=120px>
+
+                 <div class="rating">
+                  <input type="radio" name="star" id="star1"><label for="star1"></label>
+                  <input type="radio" name="star" id="star1"><label for="star1"></label>
+                  <input type="radio" name="star" id="star1"><label for="star1"></label>
+                  <input type="radio" name="star" id="star1"><label for="star1"></label>
+                  <input type="radio" name="star" id="star1"><label for="star1"></label>
+                  </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+        <div class="doctor_details">
+          <h5>Dr. Edward Alan</h5>
+          <p>MBBS,MD-Medicine,DNB-Nephrology</p>
+          <p>Consultant-Nephrology and Renal Trasplant</p>
+          <div class="details_2nd">
+            <p>21 years of experience,</p>
+            <h6>Nephrology</h6>
+        </div> 
+          </div>
+          </div>
+          <div class="col-lg-4 Appoint_time text-center">
+            <p>Available Tomorrow <i class="fa-regular fa-calendar-days"></i></p>
+            <p><span>Wednesday</span>:05:00PM-08:00PM</p>
+           <div class="appoint_button">
+            <h4>Make An Appointment </h4>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
 <!-- js links -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

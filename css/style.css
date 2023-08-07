@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 ol,ul{
     list-style: none;
@@ -75,11 +76,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 
-.menu_bg ul li a{ 
-    font-family: 'Montserrat', sans-serif; 
+.menu_bg ul li a{
     color: #000 !important;
     font-size: 16px !important;
-    font-weight: 500;
 }
 .menu_bg ul li a:hover{
     color: #e27a46 !important;
@@ -197,16 +196,31 @@ h1,h2,h3,h4,h5,h6,p{
 .search_btn:hover{
     background-color:#e27a46 ;
 }
+.schedule_drop ul{
+    padding: 0;
+    min-width: 0px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: none;
+}
 .schedule_drop ul li a{
     border-bottom: 0.5px solid #d6d6d6;
    color: #e27a46;
-   padding: 5px 20px;
    font-family: 'Roboto', sans-serif;
+   display: flex;
+   justify-content: space-around;
 }
 .schedule_drop ul li a p{
-    
+    text-align: end;
+    padding:0px 10px;
 }
+
 .department_drop  ul{
+    overflow-y: scroll;
+    height: 220px;
     padding: 0;
     min-width: 0px;
     border-radius: 0;
@@ -224,4 +238,128 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .department_drop  ul li a:hover{
     background: #e2e2e2;
+}
+/* ------appoint----------- */
+#appoint{
+    margin-top:150px;
+}
+.categories{
+    background: #d1d1d1;
+    padding: 30px 50px;
+}
+.cat_sub{
+    width: 80px;
+}
+.categories h3{
+    font-family: 'Montserrat', sans-serif; 
+    padding-bottom: 10px;
+}
+.rating{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+.rating input{
+    display: none;    
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    position: relative;
+  
+   
+}
+.rating label::before{
+    content: '\f005';
+    font-family: fontAwesome;
+    display: block;
+    font-size: 20px;
+    color: #e27a46;
+}
+.rating label::after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    top: 0;left: 3px;
+    display: block;
+    font-size: 20px;
+    color: #275732;
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.rating label:hover::after,
+.rating input:checked ~ label::after{
+    opacity: 1;
+}
+
+.doctor_details h5{
+    padding-bottom: 10px;
+}
+.doctor_details h6{
+   font-size: 16px;
+   color:  #446059;
+   text-transform: capitalize;
+}
+.doctor_details p{
+   font-size: 16px;
+}
+.details_2nd{
+    padding-top: 20px;
+}
+
+.ratings{
+    padding-top: 20px;
+}
+.Appoint_time p span{
+    font-weight: 500;
+}
+.appoint_button{
+    width: 100%;
+    height: 70px;
+    background: #304f47;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.appoint_button::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ff7f47;
+    height: 100%;
+    width: 20%;
+   border-top-right-radius: 60px;
+   border-bottom-right-radius: 60px;
+    z-index: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.appoint_button:hover.appoint_button::after{
+    width: 100%;
+    border-radius: 6px ;
+    -webkit-border-radius: 6px ;
+    -moz-border-radius: 6px ;
+    -ms-border-radius: 6px ;
+    -o-border-radius: 6px ;
+}
+.appoint_button h4{
+    position: absolute;
+    left: 53px;top: 25px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 99999;
 }
