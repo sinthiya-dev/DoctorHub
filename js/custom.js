@@ -1,24 +1,29 @@
 new VenoBox({
     selector: '.my-video',
 });
-
+ // service slider
+//  $(document).ready(function(){
+//   $('.doc_appoint').slick({
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         arrows:true,
+//   });
+//  });
 
 $(document).ready(function(){
-  $('.port_main').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
+  $('.doc_main').slick({
+    slidesToShow: 4,
     slideToScroll:1,
-    centerPadding:"0px",
-    nextArrow:".next",
-    prevArrow:".prev",
+    infinity:true,
+    // autoplay:true,
+    // autoplaySpeed:2000,
+    dots:true,
+    arrows:false,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
           slidesToShow: 3
         }
       },
@@ -26,8 +31,6 @@ $(document).ready(function(){
         breakpoint: 480,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
           slidesToShow: 1
         }
       }
