@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 0; 
     margin: 0;
 }
+
 /* heading */
 #header{
     font-size: 14px;
@@ -29,16 +30,16 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* menubar */
-/* .menu_bg{
+.menu_bg{
+    padding:0 ;
+    background: #ffffff;
     position: fixed;    
     left:0;
-    top: 30px;
+    top: 20px;
     width: 100%;
-    z-index: 99999999;
+    z-index: 99999999999;
 }
 .bg{
-    background: rgba(69, 27, 109, 0.582);
-    color: #f1f1f1;
     z-index: 9999;
     animation: sm 3s;
     -webkit-animation: sm 3s;
@@ -53,7 +54,10 @@ h1,h2,h3,h4,h5,h6,p{
     to{
      top: 0px;
     }
- } */
+ }
+ .nav_logo img{
+    margin-left: -10px;
+ }
  .nav_logo{
     display: flex;
     align-items: center;
@@ -72,7 +76,6 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 35px;
 }
 
-
 .menu_bg ul li a{
     color: #000 !important;
     font-size: 16px !important;
@@ -82,13 +85,15 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .nav_button{
     width: 150px;
+    margin-right: -20px;
+    margin-left: 20px;
 }
 /*-----------nav end---------- */
 
 /*-----------banner start---------- */
 #banner{
     background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/doclogo.jpg) no-repeat center / cover;
-    padding: 150px 0;
+    padding: 200px 0;
 }
 .ban_txt h1{
     font-family: 'Ysabeau Infant', sans-serif; 
@@ -242,6 +247,129 @@ h1,h2,h3,h4,h5,h6,p{
 .department_drop  ul li a:hover{
     background: #e2e2e2;
 }
+
+/* ------department start------- */
+#department{
+    text-align: center;
+    padding: 180px 0 60px 0px;
+    background: #f0f7fa;
+}
+#department h3{
+    text-transform: capitalize;
+    color: #2e6092;
+    font-family: 'Ysabeau Infant', sans-serif; 
+    font-weight: 700;
+}
+#department p{
+    color: #5a5a5a;
+    padding-bottom: 20px;
+}
+.dept_inner{
+    margin: 0px 10px;
+}
+.dept_inner a{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius:10px;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    position: relative;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    box-shadow: 6px 10px 16px -4px rgba(204,202,202,0.75);
+    -webkit-box-shadow: 6px 10px 16px -4px rgba(204,202,202,0.75);
+    -moz-box-shadow: 6px 10px 16px -4px rgba(204,202,202,0.75);
+}
+.dept_inner a::after{
+    content: "";
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    z-index: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.dept_img{
+    background: cornflowerblue;
+    padding: 15px 8px;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+    z-index: 1;
+}
+.dept_inner a h5{
+    margin-left: 80px;
+    color:#3f6388;
+    z-index: 1;
+}
+.dept_inner a:hover::after{
+    width: 100%;
+    background: cornflowerblue;  
+}
+
+.dept_inner a:hover h5{
+    color: #fff;
+}
+/* scnd */
+.scnd_img{
+    background: mediumaquamarine;
+}
+.dept_scnd a:hover::after{
+        width: 100%;
+        background: mediumaquamarine; 
+}
+/* third */
+.third_img{
+    background: tomato;
+}
+.dept_third a:hover::after{
+        width: 100%;
+        background: tomato; 
+}
+
+/* button */
+.dept_btn button{
+    margin-top: 50px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background: #2e6092;
+    border: none;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.dept_btn a{
+    padding: 10px 40px;
+     color: #fff;
+}
+.dept_btn button:hover{
+    background: #ff627d;
+}
+/* ------department end------- */
+
 /* ------appoint----------- */
 #appoint{
     margin-top:200px;
@@ -356,7 +484,7 @@ h1,h2,h3,h4,h5,h6,p{
     top: 15px;
     font-size: 18px;
     color: #042749;
-    z-index: 99999;
+    z-index: 1;
 }
 .appoint_button::after{
     content: "";

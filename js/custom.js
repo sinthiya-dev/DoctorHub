@@ -60,13 +60,13 @@ $(".back_2_top").click(function(){
 $(window).scroll(function (){
   var scrolling = $(this).scrollTop()  
     if (scrolling > 30) {
-      $(".nav").addClass("bg");
+      $(".menu_bg").addClass("bg");
   } else {     
-      $(".nav").removeClass("bg"); 
+      $(".menu_bg").removeClass("bg"); 
   }
-  if(scrolling> 30){
-      $(".back_2_top").fadeIn();
-  } else{
-      $(".back_2_top").fadeOut(500);
-  }
+ // if(scrolling> 30){
+ //     $(".back_2_top").fadeIn();
+ // } else{
+ //     $(".back_2_top").fadeOut(500);
+ // }
 });
