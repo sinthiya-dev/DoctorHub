@@ -1,14 +1,24 @@
 new VenoBox({
     selector: '.my-video',
 });
+$(document).ready(function(){
+  $(".search_bar").click(function(){
+      $(".search_txt").fadeIn()
+      1000;
+  });
+  $(".search_close_btn").click(function(){
+      $(".search_txt").fadeOut()
+      1000;
+ });
+});
  // service slider
-//  $(document).ready(function(){
-//   $('.doc_appoint').slick({
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//         arrows:true,
-//   });
+// $(document).ready(function(){
+//  $('.doc_appoint').slick({
+//        slidesToShow: 1,
+//        slidesToScroll: 1,
+//        arrows:true,
 //  });
+// });
 
 $(document).ready(function(){
   $('.doc_main').slick({

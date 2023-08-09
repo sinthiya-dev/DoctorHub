@@ -83,16 +83,18 @@ h1,h2,h3,h4,h5,h6,p{
 .nav_button{
     width: 150px;
 }
-/* banner */
+/*-----------nav end---------- */
+
+/*-----------banner start---------- */
 #banner{
     background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/doclogo.jpg) no-repeat center / cover;
     padding: 150px 0;
 }
 .ban_txt h1{
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Ysabeau Infant', sans-serif; 
     font-size: 30px;
     color: #fff;
-   font-size: 48px;
+   font-size: 58px;
    font-weight: bold;
    padding-bottom: 10px;
 }
@@ -211,8 +213,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .schedule_drop ul li a{
     border-bottom: 0.5px solid #d6d6d6;
-   color: #e27a46;
-   font-family: 'Roboto', sans-serif;
+   color: #e07788;
    display: flex;
    justify-content: space-around;
 }
@@ -235,7 +236,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .department_drop  ul li a{
     border-bottom: 0.5px solid #d6d6d6;
-    color: #e27a46;
+    color: #e07788;
    padding: 5px 20px;
 }
 .department_drop  ul li a:hover{
@@ -254,6 +255,11 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .categories h3{
     padding-bottom: 10px;
+    font-family: 'Ysabeau Infant', sans-serif; 
+}
+
+.doc_appoint{
+    width: 100%;
 }
 .doc_appoint_section{
     padding: 40px 0;
@@ -382,7 +388,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 /* ----------about us start----- */
 #about{
-    margin: 80px 0;
+    margin: 50px 0;
 }
 
 .about_img{
@@ -418,9 +424,13 @@ h1,h2,h3,h4,h5,h6,p{
     z-index: 9999;
     margin-top: 210px;
 }
+.about_main{
+    margin-top: 40px;
+}
 .about_head{
     position: relative;
     padding-bottom: 50px;
+
 
 }
 .about_head::after{
@@ -434,6 +444,7 @@ h1,h2,h3,h4,h5,h6,p{
 .about_head h3{
     text-transform: capitalize;
     color: #2e6092;
+    font-family: 'Ysabeau Infant', sans-serif; 
     font-weight: 700;
 }
 
@@ -469,6 +480,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 #doctor h3{
     text-transform: capitalize;
+    font-family: 'Ysabeau Infant', sans-serif; 
     color: #2e6092;
     font-weight: 700;
     text-align: center;
@@ -522,9 +534,64 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* ---------doctor end-------- */
 
+/* ---------register end-------- */
+.reg_main{
+    padding: 20px 0;
+    background: #c4d6e9;
+    border-radius: 30px 30px 0px 0px;
+    -webkit-border-radius: 30px 30px 0px 0px;
+    -moz-border-radius: 30px 30px 0px 0px;
+    -ms-border-radius: 30px 30px 0px 0px;
+    -o-border-radius: 30px 30px 0px 0px;
+}
+
+.reg_inner{
+    padding: 20px 30px;
+}
+.reg_content h4{
+    font-family: 'Ysabeau Infant', sans-serif; 
+    padding-top: 20px;
+    color: #2e6092;
+    font-size: 30px;
+}
+.form_section{
+    text-align: end;
+    padding-right:80px ;
+}
+
+.form_box{
+    outline: none;
+    padding: 8px 15px;
+    border: .5px solid #9e9e9e;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-size: 14px;
+}
+.submit_btn{
+    background: #4c7181;
+    margin-top: 20px;
+    padding: 8px 50px;
+    border: none;
+    color:#fff ;
+    font-size: 18px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.submit_btn:hover{
+    background: #6399b1;    
+    color: #fff;
+}
+/* ---------register end-------- */
+
 /* ---------news start-------- */
 #news{
-    margin: 50px 0;
+    margin-bottom: 50px;
 }
 #news h3{
     text-align: center;
@@ -549,12 +616,12 @@ h1,h2,h3,h4,h5,h6,p{
 }
 /* ---------news end-------- */
 
+
 /* ---------footer start-------- */
 footer{
     position: relative;
-    background: #042749;
+    background: #3f6388;
     color:#fff;
-    padding-top: 150px;
 }
 .foot_logo{
     display: flex;
@@ -564,7 +631,7 @@ footer{
     font-weight: 700;
     font-size: 30px;
     padding-left: 10px;
-    color: #3f6388;
+    color: #042749;
 }
 .foot_logo span{
     color: #ff627d;
@@ -580,16 +647,23 @@ footer{
     font-weight: 700;
 }
 .foot_icon i{
-    padding: 20px 10px;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.575);
+    color: #4c7181;
+    text-align: center;
+    line-height: 50px;
     font-size: 20px;
 }
 .foot_icon i:hover{
-    color:#e27a46;
+    color:#e07788;
 }
 /* footer 2nd section */
 .foot_item h3{
     font-weight: 700;
     padding-bottom: 40px;
+    font-family: 'Ysabeau Infant', sans-serif; 
     text-align: center;
 }
 .foot_item ul li{
@@ -602,40 +676,32 @@ footer{
     font-size: 18px;
 }
 .foot_item ul li:hover i{
-    color:#e27a46;
+    color:#e07788;
 }
-.foot_item ul li a{
+.foot_item ul li a{    
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 10px;
 }
+.foot_cont ul{
+    margin-left: 30px;
+}
 /* 3rd section */
+.foot_services ul{
+  margin-left: 30px;
+}
+.foot_services ul li a:hover{
+    color:#e07788;
+}
+
+/* 4th section footer */
+
+
 .foot_support h3{
     padding-right:80px;
 }
 .foot_support ul li a:hover{
-    color:#e27a46;
-}
-/* 4th section footer */
-
-.foot_card_img{
-    background: #fff;
-    border-radius: 14px;
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    -ms-border-radius: 14px;
-    -o-border-radius: 14px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.foot_card_img:last-child img{
-    border-radius: 14px;
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    -ms-border-radius: 14px;
-    -o-border-radius: 14px;
-}
-.mastercard{
-    padding: 5px 0;
+    color:#e07788;
 }
 /* ---------footer end-------- */
