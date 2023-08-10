@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0; 
+    margin: 0;
+}
+
+/* heading */
+#header{
+    font-size: 14px;
+    color: #fff;
+    background-color: #4c7181;
+}
+#header p{
+    font-size: 14px;
+}
+
+/* menubar */
+.menu_bg{
+    padding:0 ;
+    background: #ffffff;
+    position: fixed;    
+    left:0;
+    top: 20px;
+    width: 100%;
+    z-index: 99999999999;
+}
+.bg{
+    z-index: 9999;
+    animation: sm 3s;
+    -webkit-animation: sm 3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@keyframes sm {
+    from{
+     top: -50px;
+    }
+    to{
+     top: 0px;
+    }
+ }
+ .nav_logo a img{
+    margin-left: -10px;
+ }
+ .nav_logo a{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+ .nav_logo a p{
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 5px;
+    color: #3f6388;
+}
+
+.nav_logo a span{
+    color: #ff627d;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.menu_bg ul li a{
+    color: #000 !important;
+    font-size: 16px !important;
+}
+.menu_bg ul li a:hover{
+    color: #e27a46 !important;
+}
+.nav_button{
+    width: 150px;
+    margin-right: -20px;
+    margin-left: 20px;
+}
+/*-----------nav end---------- */
+
+/*-----------banner start---------- */
+#banner{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/doclogo.jpg) no-repeat center / cover;
+    padding: 200px 0;
+}
+.ban_txt h1{
+    font-family: 'Ysabeau Infant', sans-serif; 
+    font-size: 30px;
+    color: #fff;
+   font-size: 58px;
+   font-weight: bold;
+   padding-bottom: 10px;
+}
+.ban_txt p{
+    padding: 10px 50px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+/* ---------footer start-------- */
+footer{
+    position: relative;
+    background: #3f6388;
+    color:#fff;
+}
+.foot_logo{
+    display: flex;
+    align-items: center;
+}
+ .foot_logo p{
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 10px;
+    color: #042749;
+}
+.foot_logo span{
+    color: #ff627d;
+    font-weight: 700;
+    font-size: 35px;
+}
+.foot_item p{
+    font-size: 16px;
+    font-weight: 500;   
+    padding: 25px 0; 
+}
+.foot_icon h4{
+    font-weight: 700;
+}
+.foot_icon i{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.575);
+    color: #4c7181;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.foot_icon i:hover{
+    color:#e07788;
+}
+/* footer 2nd section */
+.foot_item h3{
+    font-weight: 700;
+    padding-bottom: 40px;
+    font-family: 'Ysabeau Infant', sans-serif; 
+    text-align: center;
+}
+.foot_item ul li{
+    margin-left: 20px;
+    position:relative;
+}
+.foot_item ul li i{
+    position: absolute;
+    left: -35px;top: 15px;
+    font-size: 18px;
+}
+.foot_item ul li:hover i{
+    color:#e07788;
+}
+.foot_item ul li a{    
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.foot_cont ul{
+    margin-left: 30px;
+}
+/* 3rd section */
+.foot_services{
+    margin-bottom: 68px;
+}
+.foot_services ul{
+  margin-left: 30px;
+}
+.foot_services ul li a:hover{
+    color:#e07788;
+}
+
+/* 4th section footer */
+
+
+.foot_support h3{
+    padding-right:80px;
+}
+
+.foot_support ul li a:hover{
+    color:#e07788;
+}
+/* ---------footer end-------- */
