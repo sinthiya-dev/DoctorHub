@@ -72,22 +72,101 @@
               <a class="nav-link" href="#"> Appointment 
               </a>
             </li>
-           
           </ul>
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn" class="btn dropdown-toggle nav_button  btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-regular fa-user"></i> Account
+          </button>
 
-          <div class="dropdown navuser_drop">
-            <button class="btn dropdown-toggle nav_button btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-regular fa-user"></i> Account
-            </button>
-            <ul class="dropdown-menu user_menu">
+           <!-- The Modal -->
+           <div id="myModal" class="modal">
+           
+             <!-- Modal content -->
+             <div class="modal-content">
+                <div class="container">
+                 <div class="row  justify-content-around reg_main">
+                 
+                  <div class="col-lg-6">
+                    <div class="reg_content reg_inner">
+                      <h4>Make an account to get updates</h4><br><br>
+                      <div class="form_section">
+                        <form action="/action_page.php">
+                          <label for="fname">Name:&nbsp;</label>
+                          <input type="text" class="email form_box" placeholder="  &#xf007;   Enter your Name.." style="font-family:Arial, FontAwesome"><br><br>
+                       
+                        <label for="fname">Phone No:&nbsp;</label>
+                        <input type="text" class="email form_box" placeholder="  &#xf095;   Enter your email" style="font-family:Arial, FontAwesome"><br><br>
+                        <label for="fname">Email:&nbsp;</label>
+                        <input type="text" class="email form_box" placeholder="  &#xf0e0;   Enter your email" style="font-family:Arial, FontAwesome"><br>
+                        <input type="submit" class="submit_btn"value="Submit"><br>
+                      </form>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="reg_content reg_inner">
+                      <h4>Make an account to get updates</h4><br><br>
+                      <div class="form_section">
+                        <form action="/action_page.php">
+                          <label for="fname">Name:&nbsp;</label>
+                          <input type="text" class="email form_box" placeholder="  &#xf007;   Enter your Name.." style="font-family:Arial, FontAwesome"><br><br>
+                       
+                        <label for="fname">Phone No:&nbsp;</label>
+                        <input type="text" class="email form_box" placeholder="  &#xf095;   Enter your email" style="font-family:Arial, FontAwesome"><br><br>
+                        <label for="fname">Email:&nbsp;</label>
+                        <input type="text" class="email form_box" placeholder="  &#xf0e0;   Enter your email" style="font-family:Arial, FontAwesome"><br>
+                        <input type="submit" class="submit_btn"value="Submit"><br>
+                      </form>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                 </div>
+                </div>
+               <span class="close">  <button type="button" class="btn-close search_close_btn" aria-label="Close"></button>
+             </div>
+           
+           </div>
+          <!-- <div class="dropdown navuser_drop ">
+              <button class="btn dropdown-toggle nav_button  btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-regular fa-user"></i> Account
+              </button>
+    
+               <div class="search_txt">
+                 <form action="">
+                  <div class="mb-3">
+                    <input type="email" class="form-control search_button" id="exampleInputEmail1" placeholder="  Search Here......"aria-describedby="emailHelp">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    
+                     <button type="button" class="btn-close search_close_btn" aria-label="Close"></button>
+                  </div>
+                </form>
+              </div>
+              </div> -->
+            <!-- <ul class="dropdown-menu user_menu">
+
               <li>
                 <a class="dropdown-item" href="#register"><i class="fa-solid fa-chalkboard-user"></i>Sign Up</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <i class="fa-regular fa-id-card"></i>My Account</a>
-              </li>
-            </ul>
+              </li>    
+        <li>
+          <a class="dropdown-item" href="#"><i class="fa-regular fa-id-card"></i>My Account</a>
+
+           <div class="account_txt">
+             <form action="">
+              <div class="mb-3">
+                <input type="email" class="form-control search_button" id="exampleInputEmail1" placeholder="  Search Here......"aria-describedby="emailHelp">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                
+                 <button type="button" class="btn-close search_close_btn" aria-label="Close"></button>
+              </div>
+            </form>
+          </div>
+          </div>
+        </li>
+            </ul> -->
          </div>
                                   
         </div>
@@ -599,7 +678,7 @@
 </section>
 
 <!-- register -->
-<section id="register">
+<!-- <section id="register">
   <div class="container">
    <div class="row  justify-content-around reg_main">
     <div class="col-lg-5 reg_inner  text-end">
@@ -625,7 +704,7 @@
     </div>
    </div>
   </div>
-</section>
+</section> -->
 
 <!-- news -->
 <section id="news">

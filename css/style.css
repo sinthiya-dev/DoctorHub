@@ -88,6 +88,107 @@ h1,h2,h3,h4,h5,h6,p{
     margin-right: -20px;
     margin-left: 20px;
 }
+ /* ---------account end-------- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+     background-color: #fefefe;
+     margin: 10% auto;
+     /*15%fromthetopandcentered*/width: 80%;
+     border-radius: 50px 0px 50px 0px;
+     -webkit-border-radius: 50px 0px 50px 0px;
+     -moz-border-radius: 50px 0px 50px 0px;
+     -ms-border-radius: 50px 0px 50px 0px;
+     -o-border-radius: 50px 0px 50px 0px;
+}
+  
+  /* The Close Button */
+  .close{
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    padding: 12px;
+    border:3px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #fff;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ 
+.reg_main{
+    /*padding: 20px 0;
+    */background:linear-gradient(rgba(196, 214, 233, 0.502),rgba(196, 214, 233, 0.502)),url(../images/form.jpg) no-repeat center / cover;
+    border-radius: 50px 0px 50px 0px;
+    -webkit-border-radius: 50px 0px 50px 0px;
+    -moz-border-radius: 50px 0px 50px 0px;
+    -ms-border-radius: 50px 0px 50px 0px;
+    -o-border-radius: 50px 0px 50px 0px;
+}
+
+.reg_inner{
+    padding: 20px 30px;
+}
+.reg_content h4{
+    font-family: 'Ysabeau Infant', sans-serif; 
+    padding-top: 20px;
+    color: #2e6092;
+    font-size: 30px;
+}
+.form_section{
+    text-align: end;
+    padding-right:80px ;
+}
+
+.form_box{
+    outline: none;
+    padding: 8px 15px;
+    border: .5px solid #9e9e9e;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-size: 14px;
+}
+.submit_btn{
+    background: #4c7181;
+    margin-top: 20px;
+    padding: 8px 50px;
+    border: none;
+    color:#fff ;
+    font-size: 18px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.submit_btn:hover{
+    background: #6399b1;    
+    color: #fff;
+}
+/* register end */
+
 /*-----------nav end---------- */
 
 /*-----------banner start---------- */
@@ -652,60 +753,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* ---------doctor end-------- */
 
-/* ---------register end-------- */
-.reg_main{
-    padding: 20px 0;
-    background: #c4d6e9;
-    border-radius: 30px 30px 0px 0px;
-    -webkit-border-radius: 30px 30px 0px 0px;
-    -moz-border-radius: 30px 30px 0px 0px;
-    -ms-border-radius: 30px 30px 0px 0px;
-    -o-border-radius: 30px 30px 0px 0px;
-}
 
-.reg_inner{
-    padding: 20px 30px;
-}
-.reg_content h4{
-    font-family: 'Ysabeau Infant', sans-serif; 
-    padding-top: 20px;
-    color: #2e6092;
-    font-size: 30px;
-}
-.form_section{
-    text-align: end;
-    padding-right:80px ;
-}
-
-.form_box{
-    outline: none;
-    padding: 8px 15px;
-    border: .5px solid #9e9e9e;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    font-size: 14px;
-}
-.submit_btn{
-    background: #4c7181;
-    margin-top: 20px;
-    padding: 8px 50px;
-    border: none;
-    color:#fff ;
-    font-size: 18px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-.submit_btn:hover{
-    background: #6399b1;    
-    color: #fff;
-}
-/* ---------register end-------- */
 
 /* ---------news start-------- */
 #news{
