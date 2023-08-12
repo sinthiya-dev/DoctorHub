@@ -29,6 +29,7 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 14px;
 }
 
+
 /* menubar */
 .menu_bg{
     padding:0 ;
@@ -88,6 +89,158 @@ h1,h2,h3,h4,h5,h6,p{
     margin-right: -20px;
     margin-left: 20px;
 }
+ /* ---------account end-------- */
+.modal {
+    /* display: none; */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; 
+    background-color: rgba(0,0,0,0.7); 
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+     background-color: #fefefe;
+     margin: 2.5% auto;
+     width: 80%;
+     border-radius: 50px 0px 50px 0px;
+     -webkit-border-radius: 50px 0px 50px 0px;
+     -moz-border-radius: 50px 0px 50px 0px;
+     -ms-border-radius: 50px 0px 50px 0px;
+     -o-border-radius: 50px 0px 50px 0px;
+}
+  
+  /* The Close Button */
+  .close{
+    position: absolute;
+    right: -80px;
+    top: -20px;
+    padding: 12px;
+    border:3px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #fff;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.reg_main{
+    padding: 20px 0;
+    background:linear-gradient(rgba(196, 214, 233, 0.502),rgba(196, 214, 233, 0.502)),url(../images/form.jpg) no-repeat center / cover;
+    border-radius: 50px 0px 50px 0px;
+    -webkit-border-radius: 50px 0px 50px 0px;
+    -moz-border-radius: 50px 0px 50px 0px;
+    -ms-border-radius: 50px 0px 50px 0px;
+    -o-border-radius: 50px 0px 50px 0px;
+}
+.reg_main input,hr{
+    margin:10px 50px;
+}
+.reg_inner{
+    padding: 30px 40px;
+    
+}
+
+.reg_inner h4{
+    text-transform: capitalize;
+    text-align: center;
+    margin-left: -17px;
+    width: 108%;
+    height: 50px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: #fff;
+    background: #5936d8;
+    font-size: 36px;
+    position: relative;
+    z-index: 999999999999;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -ms-border-radius: 5px 5px 0px 0px;
+    -o-border-radius: 5px 5px 0px 0px;
+}
+.reg_inner h4::before{
+    content: "";
+    clip-path: polygon(0 0, 100% 0, 100% 98%);
+    height: 17px;
+    width: 17px;
+    background: #43308a;
+    position: absolute;
+    left: 0px;
+    top: 49px;
+}
+.reg_inner h4::after{
+    content: "";
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    height: 17px;
+    width: 17px;
+    background: #43308a;
+    position: absolute;
+    right: 0px;
+    top: 49px;
+
+}
+.form_section{
+    background: #fff;
+    padding: 20px 0;
+    padding-top: 100px;
+    margin-top: -70px;
+    box-shadow: 4px 4px 25px 5px rgba(158,157,157,0.75);
+    -webkit-box-shadow: 4px 4px 25px 5px rgba(158,157,157,0.75);
+    -moz-box-shadow: 4px 4px 25px 5px rgba(158,157,157,0.75);
+}
+
+
+.form_box{
+    outline: none;
+    /* border: .5px solid #9e9e9e; */
+    border: none;
+    /*border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px; */
+    font-size: 14px;
+}
+
+.submit_btn{
+    background: #5936d8;
+    margin-top: 20px;
+    padding: 8px 30px;
+    border: none;
+    color:#fff ;
+    font-size: 18px;
+}
+.submit_btn:hover{
+    background: #ff627d;    
+    color: #fff;
+}
+.log_txt{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #6b6b6b;
+
+}
+.log_txt p{
+    color: #43308a;
+    font-size: 16px;
+}
+
+/* register end */
+
 /*-----------nav end---------- */
 
 /*-----------banner start---------- */
