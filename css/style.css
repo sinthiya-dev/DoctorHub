@@ -403,7 +403,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* ------department start------- */
 #department{
     text-align: center;
-    padding: 180px 0 40px 0px;
+    padding: 180px 0 100px 0px;
     background: #f0f7fa;
 }
 #department h3{
@@ -415,6 +415,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 #department p{
     color: #5a5a5a;
+    padding-bottom: 20px;
+}
+.dept_main{
     padding-bottom: 20px;
 }
 .dept_inner{
@@ -485,7 +488,6 @@ h1,h2,h3,h4,h5,h6,p{
     border: none;
 }
 .dept_btn a{
-    margin-top: 50px;
     padding: 15px 40px;
     background:#053a70 ;
     color: #fff;
@@ -618,23 +620,22 @@ h1,h2,h3,h4,h5,h6,p{
     color: #023c75;
 }
 /* ----------about us end------- */
+
+
 /* ---------services start------- */
 
 #service{
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    background:
     url(../images/banner.jpg) no-repeat center / cover;
-    padding: 150px 0;
+    padding: 100px 0;
     margin: 30px 0;
     background-attachment: fixed;
 }
 .ser_inner{
-    background: #43308a;
+    background:rgba(12, 48, 83, 0.829);
     text-align: center;
-    padding: 20px 30px;
-    color: #ffffff;
-    box-shadow: 6px 10px 16px -4px rgba(204,202,202,0.75);
-    -webkit-box-shadow: 6px 10px 16px -4px rgba(204,202,202,0.75);
-    -moz-box-shadow: 6px 10px 16px -4px rgba(204,202,202,0.75);
+    padding: 20px 0px;
+    
     border-radius: 20px 0px 20px 0px;
     -webkit-border-radius: 20px 0px 20px 0px;
     -moz-border-radius: 20px 0px 20px 0px;
@@ -642,21 +643,24 @@ h1,h2,h3,h4,h5,h6,p{
     -o-border-radius: 20px 0px 20px 0px;
 }
 
-.ser_inner  i{
-    font-size: 50px;
-    padding-bottom: 20px;
-}
 .ser_inner  h6{
     font-family: 'Ysabeau Infant', sans-serif; 
-    font-size: 22px;
-    color: #e07788;
+    font-size: 24px;
+    color: #ffffff;
     font-weight: 700;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+.ser_frst{
+    padding: 30px 10px;
+}
+.ser_frst h6{
+    padding-top: 25px;
+}
+.ser_3rd{
+    padding: 25px 0;
 }
 
-.ser_inner  p{
-    font-size: 14px;
-    color: #d6d6d6;
-}
 /* ---------services end------- */
 
 /* ---------doctor start-------- */
