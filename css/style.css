@@ -733,7 +733,7 @@ h1,h2,h3,h4,h5,h6,p{
     text-align: center;
     color: #fff;
     background: #042749;
-    font-size: 55px;
+    font-size: 45px;
 }
 .news_main{
     background: #ececec;
@@ -781,19 +781,20 @@ footer{
 }
 .foot_icon h4{
     font-weight: 700;
+    margin-bottom: 20px;
 }
-.foot_icon i{
-    margin: 5px;
-    width: 50px;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.575);
-    color: #4c7181;
+.socialicon i{
+    height: 30px;
+    width: 30px;
+    border:1px solid white;
     text-align: center;
-    line-height: 50px;
-    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
 }
-.foot_icon i:hover{
-    color:#e07788;
+.socialicon i:hover {
+    border:1px solid #ff627d;
+    color: #ff627d;
 }
 /* footer 2nd section */
 .foot_item h3{
