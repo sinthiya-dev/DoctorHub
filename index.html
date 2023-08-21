@@ -28,7 +28,7 @@
             <div class=" col-md-7 col-lg-7">
                 <span>Welcome To DoctorHub</span>
             </div>
-            <div class="col-md-3 col-lg-3 text-end">
+            <div class="col-md-3 col-lg-3 head_no text-end">
                 <P>+88-01914075276</P>
             </div>
         </div>
@@ -183,10 +183,20 @@
     <div class="row search_main py-5 justify-content-around">
       <div class="col-lg-2">
         <div class="search_inner">
-          <div class="location">
-            <a href="https://www.google.com/maps/@23.774616,90.4238133,15z?entry=ttu"><i class="fa-solid fa-location-dot"></i> Location...</a>
-          </div>
-          
+          <div class="col-lg-2  text-end">
+            <div class="dropdown department_drop search_drop">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Location <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mohammodpur</a></li>
+                  <li><a class="dropdown-item" href="#">Azimpur</a></li>
+                  <li><a class="dropdown-item" href="#">Danmondi</a></li>
+                  <li><a class="dropdown-item" href="#">Kolabagan</a></li>
+                  <li><a class="dropdown-item" href="#">Sukrabad</a></li>                  
+                </ul>
+             </div>
+        </div>
         </div>
       </div>
       
@@ -253,7 +263,7 @@
       <!-- 01 -->
       <div class="col-lg-4 mb-5">
         <div class="dept_inner">
-          <a href="#">
+          <a href="departmentsectors.html">
           <div class="dept_img">
             <img src="images/liver.png" width="50" alt="liver">
           </div>
@@ -320,7 +330,7 @@
     </div>
     <div class="dept_btn">
 
-      <button><a href="department.html">
+      <button><a href="department.html" target="_blank">
         View All Departments </a></button>
     </div>
   </div>

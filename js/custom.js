@@ -85,7 +85,7 @@ $(".back_2_top").click(function(){
 
 $(window).scroll(function (){
   var scrolling = $(this).scrollTop()  
-    if (scrolling > 30) {
+    if (scrolling > 20) {
       $(".menu_bg").addClass("bg");
   } else {     
       $(".menu_bg").removeClass("bg"); 
