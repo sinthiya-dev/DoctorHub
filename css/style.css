@@ -260,6 +260,7 @@ h1,h2,h3,h4,h5,h6,p{
     color: #fff;
     margin-bottom: 50px;
 }
+
 /* ----search now section---- */
 #search{
     position: relative;
@@ -275,56 +276,88 @@ h1,h2,h3,h4,h5,h6,p{
     -ms-border-radius:18px;
     -o-border-radius:18px;
 }
-.search_box{
-    width:220px;
-    height: 60px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border: none;
-    outline: none;
-    font-weight: 700;
-    font-size: 16px;
-}
-.search_main:first-child .search_inner{
-    margin-left: 10px;
-}
-.search_drop .btn{
-    font-family: 'Ysabeau Infant', sans-serif; 
+
+.search_inner{
+    margin-left: 5px;
     width: 220px;
+}
+
+.search_inner .select-btn{
+    text-transform: capitalize;
+    display: flex;
     height: 60px;
     background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.select-btn span{
+    font-family: 'Ysabeau Infant', sans-serif; 
+    font-size: 20px;
     color: #042749;
-    text-align: center;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
     font-weight: 700;
-    font-size: 18px;
 }
-.search_drop .btn i{
-    padding-left: 80px;
+.select-btn i{
+    font-size: 20px;
+    transition: 0.3s;
 }
-.search_drop ul{
-    min-width: 200px !important;
-    border-radius: 5px !important;
-    -webkit-border-radius: 5px !important;
-    -moz-border-radius: 5px !important;
-    -ms-border-radius: 5px !important;
-    -o-border-radius: 5px !important;
+.search_inner.active .select-btn i{
+    transform: rotate(-180deg);
 }
-.search_drop ul li a{
-    padding: 10px 0 !important;
-    padding-left: 10px !important;
-
+.search_inner .options_main{
+    padding-left: 0;
+    overflow-y: scroll;
+    height: 175px;
+    position: absolute;
+    top: 110px;
+    border-radius: 6px;
+    background: #fff;
+    display: none;
+    box-shadow: -9px 9px 12px -8px rgba(148,148,148,0.75);
+    -webkit-box-shadow: -9px 9px 12px -8px rgba(148,148,148,0.75);
+    -moz-box-shadow: -9px 9px 12px -8px rgba(148,148,148,0.75);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
-.dropdown-toggle::after {
-  display: none;
+.search_inner.active .options_main{
+    display: block;
 }
+.options_main .option{
+    padding: 16px 55px;
+    cursor: pointer;
+    border-bottom: 0.5px solid #d6d6d6;
+    align-items: center;
+    background: #fff;
+}
+.options_main .option:hover{
+    background: #e2e2e2;
+}
+.option .option-text{
+    font-size: 16px;
+    color: #e07788;
+}
+/* schedule section */
+.schedule_drop{
+    height: 175px !important;
+    overflow-y: hidden !important;
+}
+.schedule_drop li{
+    padding: 16px 18px !important;
+}
+.schedule_drop li p{
+   color: #e07788;
+   display: flex;
+   justify-content: space-around;
+}
+.schedule_drop li p span{
+    text-align: end;
+    padding:0px 10px;
+}
+/* search button */
 
 .search_btn{
     width: 200px;
@@ -352,57 +385,15 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: 700;
     color: #fff !important;
     font-family: 'Ysabeau Infant', sans-serif; 
-
 }
 .search_btn:hover{
     background-color:#ff627d ;
-}
-.schedule_drop ul{
-    padding: 0;
-    min-width: 0px;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border: none;
-}
-.schedule_drop ul li a{
-    border-bottom: 0.5px solid #d6d6d6;
-   color: #e07788;
-   display: flex;
-   justify-content: space-around;
-}
-.schedule_drop ul li a p{
-    text-align: end;
-    padding:0px 10px;
-}
-
-.department_drop  ul{
-    overflow-y: scroll;
-    height: 220px;
-    padding: 0;
-    min-width: 0px;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border: none;
-}
-.department_drop  ul li a{
-    border-bottom: 0.5px solid #d6d6d6;
-    color: #e07788;
-   /* padding: 5px 20px; */
-}
-.department_drop  ul li a:hover{
-    background: #e2e2e2;
 }
 
 /* ------department start------- */
 #department{
     text-align: center;
-    padding: 180px 0 100px 0px;
+    padding: 200px 0 100px 0px;
     background: #f0f7fa;
 }
 #department h3{

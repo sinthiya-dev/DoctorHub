@@ -1,186 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Dr.hub Admin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/bluelogo.png"/>
+    <title>DoctorHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ysabeau+Infant:wght@200;400;500;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="css/admin.css">
-
-
-
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-
-  <!-- partial:index.partial.html -->
-  <nav class="menu" tabindex="0">
-    <div class="smartphone-menu-trigger"></div>
-    <header class="avatar">
-      <img src="images/adminpropic.png" />
-      <br><br>
-      <h6>Admin</h6>
-      
-    </header>
-    <ul>
-      <li tabindex="0" class="icon-dashboard"> <a style="color:white; text-decoration:none;" href="/admin-dashboard"><span>Dashboard</span></a> </li>
-      <li tabindex="0" class="icon-customers"> <a style="color:white; text-decoration:none;" href="/admin-doctor"><span>Doctor</span></a></li>
-      <li tabindex="0" class="icon-users"> <a style="color:white; text-decoration:none;" href="/admin-patient"><span>Patient</span></a></li>
-      <li tabindex="0" class="icon-calendar"> <a style="color:white; text-decoration:none;" href="/admin-appointment"><span>Appointment</span></a></li>
-    </ul>
-  </nav>
-
-  <main>
-
-
-    <!-- nav start -->
-    <div class="bs-example">
-      <nav class="navbar navbar-expand-md  navbar-dark fixed-top" style="background:#337AB7;">
-        <a href="/admin-dashboard" class="navbar-brand">HOSPITAL MANAGEMENT</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-          <div class="navbar-nav" style=" margin-left: 90%;">
-
-            <a href="/logout" class="nav-item nav-link">Logout</a>
-          </div>
+  <div class="container-fluid position-relative d-flex p-0">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-      </nav>
     </div>
-    
+    <!-- Spinner End -->
 
-    <section id="dashboard_card">
-     <div class="container">
-      <div class="row market-updates">
-        
-        <div class="col-lg-4 market-update-block clr-block-1">
-            <div class="row justify-content-between">
-            <div class="col-lg-8 ">
-                <div class="market-update-left">
-              <!-- <h3>{{doctorcount}}</h3> -->
-              <h4>Total Doctor</h4>
-              <p>Approval Required : {{pendingdoctorcount}}</p>
+    <!-- Sidebar Start -->
+    <div class="sidebar pe-4 pb-3">
+        <nav class="navbar">
+          <div class="nav_logo px-4 py-2">
+            <a href="index.html"><img src="images/bluelogo.png" width="50" alt="logo"><p>Doctor<span>Hub</span></p>
+              </a>
+        </div>
+            <!-- <div class="d-flex align-items-center ms-4 mb-4">
+                <div class="position-relative">
+                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                    <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                </div>
+                <div class="ms-3">
+                    <h6 class="mb-0">Jhon Doe</h6>
+                    <span>Admin</span>
+                </div>
+            </div> -->
+            <div class="navbar-nav w-100">
+                <a href="index.html" class="nav-item nav-link active my-2"><i class="fa-solid fa-border-all me-2"></i>Dashboard</a>
+                
+                <a href="widget.html" class="nav-item nav-link py-2"><i class="fa-solid fa-clipboard-list me-2"></i>Appointment</a>
+
+                <a href="widget.html" class="nav-item nav-link py-2"><i class="fa-solid fa-user-doctor me-2"></i>Doctors</a>
+                
+                <a href="form.html" class="nav-item nav-link py-2"><i class="fa-solid fa-wheelchair me-2"></i>Patients</a>
+                
+                <a href="table.html" class="nav-item nav-link py-2"><i class="fa-solid fa-gear me-2"></i>Settings</a>
+               
+                <a href="chart.html" class="nav-item nav-link py-2"><i class="fa fa-chart-bar me-2"></i>Logout</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Sidebar End -->
+
+      <!-- Content Start -->
+      <div class="content">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand navbar-dark sticky-top px-4 py-0">
+            <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+            </a>
+            <a href="#" class="sidebar-toggler flex-shrink-0">
+                <i class="fa fa-bars"></i>
+            </a>
+            <form class="d-none d-md-flex ms-4">
+                <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+            </form>
+            <div class="navbar-nav align-items-center ms-auto">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-envelope me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Message</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <div class="ms-2">
+                                    <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                    <small>15 minutes ago</small>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <div class="ms-2">
+                                    <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                    <small>15 minutes ago</small>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <div class="ms-2">
+                                    <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                    <small>15 minutes ago</small>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item text-center">See all message</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Notificatin</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">Profile updated</h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">New user added</h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">Password changed</h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item text-center">See all notifications</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <span class="d-none d-lg-inline-flex">John Doe</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">My Profile</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                        <a href="#" class="dropdown-item">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- activity start -->
+        <section id="activity pt-4 px-4">
+          <div class="container-fluid">
+             <div class="row">
+          <div class="col-lg-4">
+            <h3>activit overview</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="activ_inner">
+                 <p><i class="fa-regular fa-calendar-days"></i>
+                  500 <p>Appointment</p></p>
+                  
+                </div>
               </div>
             </div>
-            <div class="col-lg-4">
-               <div class=" market-update-right">
+          </div>
+        </div>
+          </div>
+         
+        </section>
+       
+        <!-- activity end -->
 
-              <i class="fa fa-user-md"></i>
-              </div>
-             </div>
-            <!-- <div class="clearfix"> </div> -->
-          </div>
+         <!-- Footer Start -->
+      <div class="container-fluid pt-4 px-4">
+        <div class="bg-secondary rounded-top p-4">
+            <div class="row">
+                <div class="col-12 col-sm-6 text-center text-sm-start">
+                    &copy; <a href="#">DoctorHub</a>, All Right Reserved. 
+                </div>
+                <!-- <div class="col-12 col-sm-6 text-center text-sm-end">
+                  
+                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </div> -->
+            </div>
         </div>
-        <div class="col-md-4 market-update-gd">
-          <div class="market-update-block clr-block-2">
-            <div class="col-md-8 market-update-left">
-              <!-- <h3>{{patientcount}}</h3> -->
-              <h4>Total Patient</h4>
-              <p>Wants to Admit : {{pendingpatientcount}}</p>
-            </div>
-            <div class="col-md-4 market-update-right">
-              <i class="fa fa-user-o"></i>
-            </div>
-            <div class="clearfix"> </div>
-          </div>
-        </div>
-        <div class="col-md-4 market-update-gd">
-          <div class="market-update-block clr-block-3">
-            <div class="col-md-8 market-update-left">
-              <!-- <h3>{{appointmentcount}}</h3> -->
-              <h4>Total Appointment</h4>
-              <p>Approve Appointments :{{pendingappointmentcount}} </p>
-            </div>
-            <div class="col-md-4 market-update-right">
-              <i class="fa fa-calendar"> </i>
-            </div>
-            <!-- <div class="clearfix"> </div> -->
-          </div>
-        </div>
-        <!-- <div class="clearfix"> </div> -->
-       </div>
-      </div>
-    </section>
+    </div>
+    <!-- Footer End -->
+     </div>
+     <!-- Content end -->
 
-      <div class="container">
-        <div class="row">
-          <div class="panel panel-primary col-md-5" style="margin-left:2%;">
-            <div class="panel-heading" style="text-align:center;">
-              <h6 class="panel-title">Recent Doctors</h6>
-            </div>
-            <table class="table table-hover" id="dev-table">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Department</th>
-                  <th>Mobile</th>
-                  <th>Status</th>
-      
-                </tr>
-              </thead>
-              <!-- {% for d in doctors %} -->
-              <tr>
-                <td> shjha</td>
-                <td>dkueff</td>
-                <td>iocs</td>
-                <!-- {%if d.status%} -->
-                <td> <span class="label label-primary">Permanent</span></td>
-                <!-- {% else %} -->
-                <td> <span class="label label-success">On Hold</span></td>
-                <!-- {% endif %} -->
-      
-              </tr>
-              <!-- {% endfor %} -->
-            </table>
-          </div>
-      
-          <div class="panel panel-primary col-md-5" style="margin-left:5%;">
-            <div class="panel-heading" style="text-align:center;">
-              <h6 class="panel-title">Recent Patient</h6>
-            </div>
-            <table class="table table-hover" id="dev-table">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Symptoms</th>
-                  <th>Mobile</th>
-                  <th>Address</th>
-                  <th>Status</th>
-      
-                </tr>
-              </thead>
-              <!-- {% for p in patients %} -->
-              <tr>
-                <td> sjudyd</td>
-                <td>jfuhj</td>
-                <td>0198273</td>
-                <td>fjegtui</td>
-                <!-- {%if p.status%} -->
-                <td> <span class="label label-primary">Admitted</span></td>
-                <!-- {% else %} -->
-                <td> <span class="label label-success">On Hold</span></td>
-                <!-- {% endif %} -->
-      
-              </tr>
-              <!-- {% endfor %} -->
-            </table>
-          </div>
-        </div>
-      </div>
-    <footer>
-      <p>
-        <a id="ftr" href="#" class="fa fa-facebook"></a>
-        <a id="ftr" href="#" class="fa fa-whatsapp"></a>
-        <a id="ftr" href="#" class="fa fa-instagram"></a>
-        <a id="ftr" href="#" class="fa fa-twitter"></a>
-      </p>
-    </footer>
-    </main>
-
+     <!-- Back to Top -->
+     <a href="#" class="btn btn-lg btn-primary btn-lg-square back_2_top"><i class="fa-solid fa-arrow-up"></i></a>
+</div>
  
 
 <!-- js links -->
@@ -188,7 +206,7 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/slick.min.js"></script>  
 <script src="js/venobox.min.js"></script> 
-<script src="js/custom.js"></script>
+<script src="js/admin.js"></script>
 </body>
 
 </html>
