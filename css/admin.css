@@ -180,7 +180,7 @@ ul,ol{
   right: 15px;
   border: none;
   content: "\f107";
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Ysabeau Infant', sans-serif; 
   font-weight: 900;
   transition: .5s;
 }
@@ -239,7 +239,7 @@ ul,ol{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--dark);
+  background: var(--primary);
   border-radius: 40px;
 }
 
@@ -256,8 +256,8 @@ ul,ol{
   margin-left: 6px;
   vertical-align: middle;
   border: none;
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
+  content:"\f078";
+  font-family: 'Ysabeau Infant', sans-serif; 
   font-weight: 900;
   transition: .5s;
 }
@@ -271,10 +271,80 @@ ul,ol{
       margin-left: 15px;
   }
 }
+.content_navbar{
+  background: #042749;
+}
+
+/*** activity***/
+
+.activ_main{
+  border: 1px solid #a0a0a0;
+}
+.activ_main h4{
+  text-transform: capitalize;
+  /* font-family: 'Ysabeau Infant', sans-serif;  */
+  /* font-weight: 700; */
+  margin-left: 10px;
+}
+.activ_inner{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;;
+}
+.activ_icon i{
+  height: 50px; width:50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  background: #044a90;
+  font-size: 30px;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.activ_content{
+  font-size: 16px;
+}
+.activ_content p{
+  color: #9e9e9e;
+  font-size: 12px;
+}
+/* patient doughnut chart */
+.patient_main{
+  /* border: 1px solid #a0a0a0; */
+  padding: 5px;
+}
+.patient_chart{
+  width: 300px !important;
+  /* height: 250px !important; */
+}
+/* calender */
+.calender_main{
+  border: 1px solid #a0a0a0;
+  padding: 10px;
+  /* height: 100px !important; */
+}
+
+
+
+
+
+
+.bootstrap-datetimepicker-widget table td{
+  line-height: 15px !important;
+  /* text-align: center; */
+}
+.bootstrap-datetimepicker-widget table td.active{
+  background: #e27a46 !important;
+  text-align: center;
+
+}
 
 
 /*** Date Picker ***/
-/* .bootstrap-datetimepicker-widget.bottom {
+.bootstrap-datetimepicker-widget.bottom {
   top: auto !important;
 }
 
@@ -298,17 +368,17 @@ ul,ol{
 
 .bootstrap-datetimepicker-widget table td.today::before {
   border-bottom-color: var(--primary);
-} */
+}
 
 
-/* ** Testimonial **
+** Testimonial **
 .progress .progress-bar {
   width: 0px;
   transition: 2s;
 }
 
 
-/*** Testimonial **
+/** Testimonial **/
 .testimonial-carousel .owl-dots {
   margin-top: 24px;
   display: flex;
@@ -330,4 +400,4 @@ ul,ol{
 .testimonial-carousel .owl-dot.active {
   background: var(--dark);
   border-color: var(--primary);
-} */
+} 

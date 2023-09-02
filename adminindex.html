@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/bluelogo.png"/>
     <title>DoctorHub</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ysabeau+Infant:wght@200;400;500;700&display=swap" rel="stylesheet">
     
-    
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/venobox.min.css">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     
     <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -64,8 +66,9 @@
 
       <!-- Content Start -->
       <div class="content">
+
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand navbar-dark sticky-top px-4 py-0">
+        <nav class="navbar navbar-expand navbar-dark sticky-top px-4 py-0 content_navbar">
             <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
                 <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
             </a>
@@ -76,7 +79,7 @@
                 <input class="form-control bg-dark border-0" type="search" placeholder="Search">
             </form>
             <div class="navbar-nav align-items-center ms-auto">
-                <div class="nav-item dropdown">
+                <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         <i class="fa fa-envelope me-lg-2"></i>
                         <span class="d-none d-lg-inline-flex">Message</span>
@@ -114,11 +117,11 @@
                         <hr class="dropdown-divider">
                         <a href="#" class="dropdown-item text-center">See all message</a>
                     </div>
-                </div>
+                </div> -->
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         <i class="fa fa-bell me-lg-2"></i>
-                        <span class="d-none d-lg-inline-flex">Notificatin</span>
+                        <span class="d-none d-lg-inline-flex">Notification</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                         <a href="#" class="dropdown-item">
@@ -142,7 +145,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                        <span class="d-none d-lg-inline-flex">John Doe</span>
+                        <span class="d-none d-lg-inline-flex">Sabbir Ali</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                         <a href="#" class="dropdown-item">My Profile</a>
@@ -154,45 +157,189 @@
         </nav>
         <!-- Navbar End -->
 
-        <!-- activity start -->
-        <section id="activity pt-4 px-4">
-          <div class="container-fluid">
-             <div class="row">
-          <div class="col-lg-4">
-            <h3>activit overview</h3>
+        <!-- activity patient list -->
+         <div class="container-fluid pt-4 px-4">
             <div class="row">
-              <div class="col-lg-6">
-                <div class="activ_inner">
-                 <p><i class="fa-regular fa-calendar-days"></i>
-                  500 <p>Appointment</p></p>
-                  
-                </div>
+               
+         <!-- calender -->
+           <div class="col-lg-4">
+              <div class="calender_main rounded">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                      <h5 class="mb-0">Calender</h5>
+                      <a href="">Show All</a>
+                  </div>
+                  <div id="calender" class="cont_cal"></div>
               </div>
-            </div>
           </div>
+          <!-- patient chart -->
+          <div class="col-lg-4 ">
+                <div class="patient_main rounded">
+                    <h5>Patient visited by department</h5>
+                    <canvas id="doughnut-chart" class="patient_chart"></canvas>
+                </div>
+            </div>
+             <!-- activity -->
+             <div class="col-lg-4">
+                <div class="row activ_main rounded py-2 ">
+                   <h4>activity overview</h4>
+                 <div class="col-lg-6">
+                   <div class="activ_inner">
+                    <div class="activ_icon">
+                       <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    <div class="activ_content" >
+                       <b>500</b><p>Appointment</p>
+                     </div>
+                     
+                   </div>
+                 </div>
+                 <div class="col-lg-6">
+                   <div class="activ_inner">
+                    <div class="activ_icon">
+                       <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <div class="activ_content">
+                       <b>104</b><p>Emergancy</p>
+                     </div>
+                     
+                   </div>
+                 </div>
+                 <div class="col-lg-6">
+                   <div class="activ_inner">
+                    <div class="activ_icon">
+                       <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <div class="activ_content">
+                       <b>150</b><p>New Patient</p>
+                     </div>
+                     
+                   </div>
+                 </div>
+                 <div class="col-lg-6">
+                   <div class="activ_inner">
+                    <div class="activ_icon">
+                       <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <div class="activ_content">
+                       <b>202K</b><p>Earning</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+        
         </div>
           </div>
-         
-        </section>
-       
-        <!-- activity end -->
+        <!-- activity patient list end -->
+
+        <!-- Second row start -->
+              <!-- multiple line Chart Start -->
+              <div class="container-fluid">
+                <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="survey_main rounded p-3">
+                        <h4 class="mb-2">Hospital Survey</h4>
+                        <canvas id="salse-revenue"></canvas>
+                    </div>
+                </div>
+              
+                <!-- single bar -->
+                <div class="col-lg-6 mt-4">
+                    <div class="bg-light p-3">
+                        <h5 class="mb-2">Average Patient Visit</h5>
+                        <canvas id="bar-chart" class="visit_chart"></canvas>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- multiple line end -->
+        <!-- Second row end -->
+
+        <!-- table start-->
+        <div class="container-fluid">
+        <div class="col-lg-12">
+            <div class="bg-primary-subtle rounded h-100 p-4">
+                <h4 class="mb-4">Upcoming Patients</h4>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Patient Name</th>
+                            <th scope="col">Phone No.</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Visit Time</th>
+                            <th scope="col">Doctor</th>
+                            <th scope="col">Condition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Fatema Haque</td>
+                            <td>0198********</td>
+                            <td>Fatema@email.com</td>
+                            <td>15/09/2023</td>
+                            <td>9:15PM-9:45PM</td>
+                            <td>Dr. Suraiya Khatun</td>
+                            <td>Fracture</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Latif Hasan</td>
+                            <td>0198********</td>
+                            <td>jhon@email.com</td>
+                            <td>22/09/2023</td>
+                            <td>4:15PM-4:45PM</td>
+                            <td>Dr. Shahidullah</td>
+                            <td>General Checkup</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Monir Islam</td>
+                            <td>0198********</td>
+                            <td>Monir@email.com</td>
+                            <td>20/09/2023</td>
+                            <td>8:30PM-9:00PM</td>
+                            <td>Dr. Rashed Jaman</td>
+                            <td>Mumps stage ||</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Rokaiya Begum</td>
+                            <td>0198********</td>
+                            <td>Begum@email.com</td>
+                            <td>10/09/2023</td>
+                            <td>6:15PM-6:45PM</td>
+                            <td>Dr. Kawsar</td>
+                            <td>Stomach Pain</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+        <!-- table end-->
 
          <!-- Footer Start -->
-      <div class="container-fluid pt-4 px-4">
-        <div class="bg-secondary rounded-top p-4">
-            <div class="row">
-                <div class="col-12 col-sm-6 text-center text-sm-start">
-                    &copy; <a href="#">DoctorHub</a>, All Right Reserved. 
+      <div class="container-fluid pt-3">
+        <div class="bg-secondary rounded-top  p-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <a href="#"><img src="images/fbicon.png" width="80" alt=""></a>
+                    <a href="#"><img src="images/ticon.png" width="80" alt=""></a>
+                    <a href="#"><img src="images/igicon.png" width="80" alt=""></a>
+                    
                 </div>
-                <!-- <div class="col-12 col-sm-6 text-center text-sm-end">
-                  
-                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                    <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                </div> -->
+                <div class="col-lg-12 text-center">
+                    &copy; <a href="#">DoctorHub</a>, All Right Reserved. 
+                    Designed By Sinthiya
+                </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
+
      </div>
      <!-- Content end -->
 
@@ -204,8 +351,13 @@
 <!-- js links -->
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/slick.min.js"></script>  
-<script src="js/venobox.min.js"></script> 
+<script src="lib/chart/chart.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 <script src="js/admin.js"></script>
 </body>
 
