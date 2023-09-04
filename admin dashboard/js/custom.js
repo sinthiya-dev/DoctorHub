@@ -1,59 +1,18 @@
 (function ($) {
-    "use strict";
-
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
-    
-    
-    // // Back to top button
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() > 30) {
-    //         $('.back_2_top').fadeIn();
-    //     } else {
-    //         $('.back_2_top').fadeOut('500');
-    //     }
-    // });
-    // $('.back_2_top').click(function () {
-    //     $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-    //     return false;
-    // });
-    //--------------- fixed menubar----
-   $(window).scroll(function (){
-     var scrolling = $(this).scrollTop()  
-       if (scrolling > 15) {
-         $(".menu_bg").addClass("bg");
-   } else {     
-       $(".menu_bg").removeClass("bg"); 
-   }
-  });
-
-  $(document).ready(function(){
-    $(".user_main").click(function(){
-      $(".user_sidebar").toggleClass('theme');
-    });
-  });
-
 new VenoBox({
     selector: '.my-video',
 });
 
-// $(document).ready(function(){
-//   $(".search_bar").click(function(){
-//       $(".search_txt").fadeIn()
-//       1000;
-//   });
-//   $(".search_close_btn").click(function(){
-//       $(".search_txt").fadeOut()
-//       1000;
-//  });
-// });
+$(document).ready(function(){
+  $(".search_bar").click(function(){
+      $(".search_txt").fadeIn()
+      1000;
+  });
+  $(".search_close_btn").click(function(){
+      $(".search_txt").fadeOut()
+      1000;
+ });
+});
 
 //-------- select dropdown-----
 const selectedAll = document.querySelectorAll(".search_inner");
@@ -106,7 +65,7 @@ function closeAllDropdowns() {
 }
 
 
-// open all the dropdowns-search sector
+// open all the dropdowns
 function handleDropdown(dropdown, arrow, open) {
   if (open) {
     arrow.classList.add("rotated");
@@ -158,7 +117,29 @@ window.onclick = function(event) {
  });
 
 
+//--------------- back to top button----
+$(".back_2_top").click(function(){
+  $('html, body').animate(
+      {
+          scrollTop: 0,
+      },
+      1500
+  );
+});
 
+$(window).scroll(function (){
+  var scrolling = $(this).scrollTop()  
+    if (scrolling > 15) {
+      $(".menu_bg").addClass("bg");
+  } else {     
+      $(".menu_bg").removeClass("bg"); 
+  }
+ // if(scrolling> 30){
+ //     $(".back_2_top").fadeIn();
+ // } else{
+ //     $(".back_2_top").fadeOut(500);
+ // }
+});
 
 $('.rating').starRating({
     // starIconEmpty:'far fa-star',

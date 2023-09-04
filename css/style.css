@@ -20,6 +20,32 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* heading */
+.back_2_top{
+   position: fixed;
+   /* display: none; */
+   right: 45px;
+   bottom: 45px;
+   z-index: 99;
+}
+  
+ /*** Spinner ***/
+ #spinner {
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity .9s ease-out, visibility 0s linear .5s;
+   z-index: 99999;
+   -webkit-transition: opacity .9s ease-out, visibility 0s linear .5s;
+   -moz-transition: opacity .9s ease-out, visibility 0s linear .5s;
+   -ms-transition: opacity .9s ease-out, visibility 0s linear .5s;
+   -o-transition: opacity .9s ease-out, visibility 0s linear .5s;
+}
+ 
+ #spinner.show {
+   transition: opacity .5s ease-out, visibility 0s linear 0s;
+   visibility: visible;
+   opacity: 1;
+}
+ 
 #header{
     font-size: 14px;
     color: #fff;
@@ -57,6 +83,7 @@ h1,h2,h3,h4,h5,h6,p{
  }
  .nav_logo a img{
     margin-left: -10px;
+    padding: 5px 0;
  }
  .nav_logo a{
     display: flex;
@@ -88,7 +115,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-right: -20px;
     margin-left: 20px;
 }
- /* ---------account end-------- */
+ /* ---------account start-------- */
 .modal {
     /* display: none; */
     position: fixed; /* Stay in place */
@@ -240,6 +267,114 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* register end */
 
+.notification i{
+    font-size: 22px;
+    color: #053a70;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.notification i:hover{
+    color: #e27a46;
+}
+.notification small{
+    font-size: 10px;
+    color: #6b6b6b;
+    vertical-align: bottom;
+}
+/* user profile */
+.user_main i{
+    color: #053a70;
+    font-size: 22px;
+}
+.user_main i:hover{
+    color: #e27a46;
+}
+.user_main{
+    position: relative;
+}
+.user_sidebar{
+    height: 90vh;
+    width: 0px;
+    background: linear-gradient(#2e6092,#ff627d);
+    position: absolute;
+    right: -78px;
+    top: 60px;
+    opacity: 0;
+}
+.user_sidebar ul li{
+    font-weight: 400;
+    text-align: left;
+    padding-top: 10px;
+    color: #fff;
+}
+.user_img{
+    outline:5px double #5a94ad;
+}
+.user_btn{
+  width: 250px;
+  margin-left: -17px;
+  height: 50px;
+  /* line-height: 50px; */
+  background: #b9364c;
+
+}
+.user_btn:hover{
+    background: #96293b;
+}
+.user_btn h5{
+    font-family: 'Ysabeau Infant', sans-serif; 
+    line-height: 50px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.theme{
+    width: 250px;
+    opacity: 1;
+    /*left: 110px;
+    */transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+/* user html css */
+.pro_pic img{
+    border: 5px solid #2e6092;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.pro_info{
+    text-align: right;
+    position: relative;
+}
+.pro_info::after{
+    content: "";
+    height: 90%;
+    width: 5px;
+    background: #e07788;
+    position: absolute;
+    left: 0;top: 0;
+}
+.pro_info ul li{
+    margin-bottom: 20px;
+}
+.pro_info .user_input,.pro_info textarea{
+    padding: 2px 10px;
+    margin-left: 30px;
+    border: 2px solid #714cf8;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: right;
+}
 /*-----------nav end---------- */
 
 /*-----------banner start---------- */
@@ -548,6 +683,7 @@ h1,h2,h3,h4,h5,h6,p{
     text-align: center;
 }
 .about_vdo i{
+    font-size: 20px;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -567,16 +703,14 @@ h1,h2,h3,h4,h5,h6,p{
 .about_head{
     position: relative;
     padding-bottom: 50px;
-
-
 }
 .about_head::after{
     content: "";
-    width: 650px;
+    width: 600px;
     height: 10px;
     background: #ff627d;
     position: absolute;
-    right: -18%;bottom: 30px;
+    right: -13%;bottom: 30px;
 }
 .about_head h3{
     text-transform: capitalize;

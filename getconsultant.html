@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/bluelogo.png"/>
+    <title>Appointment</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ysabeau+Infant:wght@200;400;500;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- <div class="back_2_top">
+    <i>top</i>
+  </div> -->
+    <section id="header">
+        <div class="container lg_con">
+          <div class="row justify-content-between align-items-center ">
+            <div class=" col-md-7 col-lg-7">
+                <span>Welcome To DoctorHub</span>
+            </div>
+            <div class="col-md-3 col-lg-3 text-end">
+                <P>+88-01914075276</P>
+            </div>
+        </div>
+      </div>
+  </section>
+
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg menu_bg">
+    <div class="container align-items-center">
+      <div class="nav_logo">
+        <a href="index.html"><img src="images/bluelogo.png" width="60" alt="logo"><p>Doctor<span>Hub</span></p>
+          </a>
+    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse"   id="navbarSupportedContent">
+       
+        <ul class="navbar-nav ms-auto  menu_list">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="department.html">Departments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Services</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Doctors </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#index.html"> News 
+            </a>
+          </li>
+             <!-- Search -->        
+           <!-- <li>
+            <div class="search_bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+           <div class="search_txt">
+             <form action="#">
+              <div class="mb-3">
+                
+                <input type="email" class="form-control search_button" id="exampleInputEmail1" placeholder="  Enter Doctors Here......"aria-describedby="emailHelp">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                
+                 <button type="button" class="btn-close search_close_btn" aria-label="Close"></button>
+              </div>
+            </form>
+          </div>
+          
+        </li> -->
+        </ul>
+     
+      
+       </div>
+     
+  </div>
+  </nav>
+
+  <!-- registration -->
+    <section id="registration">
+       <div class="container">
+      <div class="row reg_main p-5">
+        <div class="col-lg-8 reg_inner">
+        <h3>Get Your Appointment!</h3>
+        <form action="#" class="form">
+         <h4>Personal Information</h4>
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="gender-box mb-5">
+          <h5>Gender</h5>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <h4>Payment method</h4>
+        <div class="gender-box mb-5">
+            <h5>Wallet Payment</h5>
+            <div class=" gender-option pay-option">
+              <div class="gender payment">
+                <input type="radio" id="bkash" name="payment" checked />
+                <label for="check-male">Bkash</label>
+              </div>
+              <div class="gender payment">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 pb-3">
+                <img src="images/bKash-Icon-Vector.jpg">
+               </div>
+               <div class="col-lg-12">
+                <input type="radio" id="nagad" name="payment" />
+                <label for="check-female">Nagad</label>
+                 </div>
+               </div>               
+              </div>
+
+              <div class="gender payment">
+                <div class="row justify-content-center">
+                     <div class="col-lg-10 pb-3">
+                 <img src="images/rocket.jpg">
+                </div>
+                <div class="col-lg-12">
+                      <input type="radio" id="rocket" name="payment" />
+                 <label for="check-other">Rocket</label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        <button>Submit</button>
+      </form>
+      </div>
+      <!-- <div class="col-lg-4">
+        <img src="images/regpic.jpg" alt="">
+      </div> -->
+        </div>
+      </div>
+    </section>
+    
+<!-- footer -->
+<footer>
+    <div class="container">
+      <div class="row py-5 justify-content-between 
+      align-items-center"> 
+  
+        <div class="col-lg-3 ">
+          <div class="foot_logo">
+            <img src="images/bluelogo.png" width="80" alt="logo">
+              <p>Doctor<span>Hub</span></p>
+          </div>
+          <div class="foot_item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ratione nam eaque animi voluptas eligendi voluptate quae facere </p>
+          <div class="foot_icon">
+            <h4>Follow Us:</h4>
+            <div class="socialicon">
+              <i class="fa-brands fa-twitter"></i>
+             
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          </div>
+          
+          
+  
+        </div>
+  
+        <!-- 2nd -->
+        <div class="col-lg-3 foot_item foot_cont">
+          <h3>Contact Us</h3>
+          <ul>
+            <li> 
+              <i class="fa-solid fa-phone"></i>
+              <a href="#"> +01852-1265122<br>
+                +01852-1265122</a>
+            </li>
+            <li>
+               <i class="fa-regular fa-envelope"></i>
+              <a href="#"> info@example.com
+              support@example.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <a href="#">2752 hatirpul road Agargaon,Dhaka,Bangladesh</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- 3rd --> 
+        <div class="col-lg-3 foot_item foot_services ">
+          <h3>Services</h3>
+          <ul>
+            <li> 
+              <a href="#">ICU</a>
+            </li>
+            <li>
+              <a href="#">Help Line</a>
+            </li>
+            <li>
+              <a href="#">Online Appointment</a>
+            </li>
+           
+          </ul>
+         
+        </div>
+       
+        <!-- 4th -->
+        <div class="col-lg-3 foot_item foot_support">
+          <h3>Support</h3>
+          <ul>
+            <li> 
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Our Blogs</a>
+            </li>
+            <li>
+              <a href="#">Terms and Conditions</a>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  </footer>
+  
+  
+        <!-- js links -->
+      <script src="js/jquery-1.12.4.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/jquery.star-rating.js"></script>
+      <script src="/path/to/cdn/jquery.slim.min.js"></script>
+      <!-- <script src="/path/to/jquery.star-rating.js"></script> -->
+      <script src="js/custom.js"></script>
+  </body>
+  </html>

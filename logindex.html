@@ -25,11 +25,6 @@
     </div>
 </div>
 <!-- Spinner End -->
-<!-- Back to Top -->
-<!-- <div class="back_2_top">
-  <a href="#" class="btn btn-lg btn-danger  btn-lg-square "><i class="fa-solid fa-arrow-up"></i></a>
-</div> -->
-
 
     <section id="header">
         <div class="container lg_con">
@@ -48,7 +43,7 @@
   <nav class="navbar navbar-expand-lg menu_bg">
       <div class="container align-items-center">
         <div class="nav_logo">
-          <a href="index.html"><img src="images/bluelogo.png" width="80" alt="logo"><p>Doctor<span>Hub</span></p>
+          <a href="logindex.html"><img src="images/bluelogo.png" width="70" alt="logo"><p>Doctor<span>Hub</span></p>
             </a>
       </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,86 +76,56 @@
               <a class="nav-link" href="appointment.html"> Appointment 
               </a>
             </li>
-          </ul>
-          <!-- Trigger/Open The Modal -->
-          <button id="myBtn" class="btn dropdown-toggle nav_button  btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-regular fa-user"></i> Account
-          </button>
-
-           <!-- The Modal -->
-           <div id="myModal" class="modal">
-           
-             <!-- Modal content -->
-             <div class="modal-content">
-                <div class="container">
-                 <div class="row  justify-content- reg_main">
-                 
-                  <div class="col-lg-6">
-                   
-                    <div class="reg_content reg_inner">
-                      <h4>Make an account</h4>
-                    
-                      <div class="form_section">
-                       
-
-                        <form action="/action_page.php">
-                          
-                        <input type="text" class="email form_box" placeholder="  &#xf007;   Enter your Name" style="font-family:Arial, FontAwesome"><hr>
-                     
-
-                        <input type="text" class="email form_box" placeholder="  &#xf095;   Enter your email" style="font-family:Arial, FontAwesome"><hr>
-
-                        <input type="text" class="email form_box" placeholder="  &#xf0e0;   Enter your email" style="font-family:Arial, FontAwesome"><hr>
-
-                        <input type="text" class="email form_box" placeholder="  &#xf0e0; Password" style="font-family:Arial, FontAwesome"><hr>
-
-                        <input type="text" class="email form_box" placeholder="  &#xf0e0;Rewrite Password" style="font-family:Arial, FontAwesome"><hr>
-
-                        <input type="submit" class="submit_btn"value="Submit"><br>
-                      </form>
-                      </div>
-                      
+            <li class="nav-item">
+                <div class="notification dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell me-lg-2"></i>
+                        <!-- <span class="d-none d-lg-inline-flex"></span> -->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end  border-0 rounded-0 rounded-bottom mx-3">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">Appointment Confirmed!</h6>
+                            <small>10 minutes ago</small>
+                        </a> 
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">Profile Updated!</h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">Password changed</h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item text-center">See all notifications</a>
                     </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                    <div class="log_txt">
-                         <p>Aleady Have An account  &quest;</p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quae optio dignissimos architecto! At dolores, temporibus soluta similique architecto cupiditate!
-                    
-                    <p>Log In here...</p>
-                    </div>
-                 
-                    <div class="reg_content reg_inner">
-                      <h4>Log in</h4>
-                    
-                      <div class="form_section">
-                       
-
-                        <form action="/logindex.html">
-                          
-                        <input type="text" class="email form_box" placeholder="  &#xf007;   Enter  User Name" style="font-family:Arial, FontAwesome"><hr>
-                     
-
-                        <input type="text" class="email form_box" placeholder="  &#xf095;   Enter your Number" style="font-family:Arial, FontAwesome"><hr>
-
-
-                        <input type="text" class="email form_box" placeholder="  Password" style="font-family:Arial, FontAwesome"><hr>
-
-                       <input type="submit" class="submit_btn"value="Submit"><br>
-                      </form>
-                      </div>
-                      
-                    </div>
-                  </div>
-
-                 </div>
                 </div>
-               <span class="close">  <button type="button" class="btn-close search_close_btn" aria-label="Close"></button>
-             </div>
-           
-           </div>
-        
+              
+            </li>
+            <li class="nav-item">
+                <div class="user_main">
+                     <a class="nav-link" href="#"> <i class="fa-solid fa-user"></i></a>
+                     <div class="user_sidebar text-center p-3">
+                        <img src="images/profile.jpg" class="user_img" alt="userphoto" width="120">
+                        
+                        <div class="user_details pt-4">
+                            <ul>
+                                <li>Name:<small> Kawser Ali</small></li>
+                                <li>Phone No:<small> 1982726354</small></li>
+                                <li>Email:<small> Kawser@gmail.com</small></li>
+                                <li>Date of birth:<small> 20/09/1965</small> </li>
+                                <li>Address:<small> Road no.08,  &nbsp;&nbsp;&nbsp;Zigatola,Dhanmondi</small></li>
+                            </ul>
+                            <a href="user.html" class="user_btn  mt-3"><h5>Update Info</h5></a> 
+                        </div>
+                     </div>
+                </div>
+             
+              
+            </li>
+          </ul>
+         
          </div>
                                   
         </div>
@@ -544,7 +509,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- footer -->
 <footer>

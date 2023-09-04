@@ -179,7 +179,7 @@ ul,ol{
   top: 15px;
   right: 15px;
   border: none;
-  content: "\f107";
+  content: "";
   font-family: 'Ysabeau Infant', sans-serif; 
   font-weight: 900;
   transition: .5s;
@@ -256,15 +256,12 @@ ul,ol{
   margin-left: 6px;
   vertical-align: middle;
   border: none;
-  content:"\f078";
+  content:"";
   font-family: 'Ysabeau Infant', sans-serif; 
   font-weight: 900;
   transition: .5s;
 }
 
-.content .navbar .dropdown-toggle[aria-expanded=true]::after {
-  transform: rotate(-180deg);
-}
 
 @media (max-width: 575.98px) {
   .content .navbar .navbar-nav .nav-link {
@@ -316,10 +313,10 @@ ul,ol{
   /* border: 1px solid #a0a0a0; */
   padding: 5px;
 }
-.patient_chart{
+/* .patient_chart{/
   width: 300px !important;
-  /* height: 250px !important; */
-}
+  height: 250px !important;
+} */
 /* calender */
 .calender_main{
   border: 1px solid #a0a0a0;

@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0; 
+    margin: 0;
+}
+
+/* heading */
+#header{
+    font-size: 14px;
+    color: #fff;
+    background-color: #4c7181;
+}
+#header p{
+    font-size: 14px;
+}
+
+
+/* menubar */
+.menu_bg{
+    padding:0 ;
+    background: #ffffff;
+    position: fixed;    
+    left:0;
+    top: 20px;
+    width: 100%;
+    z-index: 99999999999;
+}
+.bg{
+    z-index: 9999;
+    animation: sm 3s;
+    -webkit-animation: sm 3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@keyframes sm {
+    from{
+     top: -50px;
+    }
+    to{
+     top: 0px;
+    }
+ }
+ .nav_logo a img{
+    margin-left: -10px;
+ }
+ .nav_logo a{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+ .nav_logo a p{
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 5px;
+    color: #3f6388;
+}
+
+.nav_logo a span{
+    color: #ff627d;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.menu_bg ul li a{
+    color: #000 !important;
+    font-size: 16px !important;
+}
+.menu_bg ul li a:hover{
+    color: #e27a46 !important;
+}
+.nav_button{
+    width: 150px;
+    margin-right: -20px;
+    margin-left: 20px;
+}
+/* search bar */
+.search_bar{
+    position: relative;
+    padding-top: 8px;
+    margin-left: 10px;
+}
+.search_bar i{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    font-size: 20px;
+    color: #e07788;
+    cursor: pointer;
+}
+
+.search_txt{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height:586px;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 999;
+}
+.search_button{
+    width: 50%;
+    height: 54.8px;
+    border-radius:50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+    margin-top: 230px;
+    margin-left: 25%;
+    font-size: 16px;
+}
+.search_txt i{
+    position: absolute;
+    right:24.9%;
+    top: 39.2%;
+    font-size: 28px;
+    background: #042749;
+    padding: 14px 27px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+}
+.search_txt i:hover{
+   background: #e07788;
+}
+.search_close_btn{
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    padding: 15px;
+    border:3px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #fff;
+}
+
+
+/*-----------nav end---------- */
+
+/*-----------banner start---------- */
+#banner{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/deptbanner1.jpg) no-repeat center / cover;
+    padding: 100px 0;
+}
+
+/* ban registration */
+
+.reg_main input,hr{
+    margin:10px 50px;
+}
+.reg_inner{
+    padding: 30px 40px;
+}
+.reg_inner h4{
+    text-transform: capitalize;
+    text-align: center;
+    margin-left: -17px;
+    width: 108%;
+    height: 50px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: #fff;
+    background: #e07788;
+    font-size: 36px;
+    position: relative;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -ms-border-radius: 5px 5px 0px 0px;
+    -o-border-radius: 5px 5px 0px 0px;
+}
+.reg_inner h4::before{
+    content: "";
+    clip-path: polygon(0 0, 100% 0, 100% 98%);
+    height: 17px;
+    width: 17px;
+    background: #c75a6d;
+    position: absolute;
+    left: 0px;
+    top: 49px;
+}
+.reg_inner h4::after{
+    content: "";
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    height: 17px;
+    width: 17px;
+    background: #c75a6d;
+    position: absolute;
+    right: 0px;
+    top: 49px;
+
+}
+.form_section{
+    background: #011122;
+    padding: 20px 0;
+    padding-top: 100px;
+    margin-top: -70px;
+}
+.doc_details ul li a{
+   color: #fff;
+   padding-top: 8px;
+   padding-left: 20px;
+}
+
+hr.white{
+    border: 1px solid #fff;
+}
+.form_box{
+    padding: 10px 30px;
+    margin-left: 35px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+.submit_btn{
+    background: #ff627d;
+    margin-top: 30px;
+    margin-left: 50px;
+    padding: 8px 30px;
+    border: none;
+    color:#fff ;
+    font-size: 18px;
+}
+.submit_btn:hover{
+    background: #4c7181;
+    color: #fff;
+}
+
+
+/*----------banner end---------- */
+
+
+/* --------depart_buttons start-------*/
+#depart_buttons{
+    margin: 100px 0;
+}
+
+.appoint_inner{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 3px 3px 11px 0px rgba(133,126,126,0.75);
+    -webkit-box-shadow: 3px 3px 11px 0px rgba(133,126,126,0.75);
+    -moz-box-shadow: 3px 3px 11px 0px rgba(133,126,126,0.75);
+}
+.appoint_img{
+    position: relative;
+    width: 100%;
+}
+.appoint_img img{
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+    width: 100%;
+}
+.app_img_button a{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, 0.567);
+    border-radius:  10px 0 0 10px;
+    -webkit-border-radius:  10px 0 0 10px;
+    -moz-border-radius:  10px 0 0 10px;
+    -ms-border-radius:  10px 0 0 10px;
+    -o-border-radius:  10px 0 0 10px;
+    z-index: 0;
+    opacity: 0;
+    transition: 0.5s ease-in-out ;
+    -webkit-transition: 0.5s ease-in-out ;
+    -moz-transition: 0.5s ease-in-out ;
+    -ms-transition: 0.5s ease-in-out ;
+    -o-transition: 0.5s ease-in-out ;
+}
+.appoint_inner:hover .app_img_button a{
+    height: 30%;
+    opacity: 1;
+}
+.app_img_button a h4{
+    font-size:18px;
+    background: rgba(4, 38, 73, 0.863);
+    padding: 10px 20px;
+    outline: double 1px transparent;
+    color: #fff;
+    z-index: 99999999;
+
+}
+.app_img_button h4:hover{
+    outline: double 2px #e6b7bf;
+}
+.appoint_txt h5{
+    padding-left: 20px;
+    color: #c75a6d;
+}
+
+.appoint_txt i p{
+    color: #8a8a8a;
+}
+.appoint_txt p i{
+    font-size: 20px;
+    color: #c75a6d;
+}
+.appoint_txt p{
+   font-size: 14px;
+   padding: 8px 20px;
+}
+
+/* --------depart_buttons end-------*/
+
+
+/* ---------footer start-------- */
+footer{
+    position: relative;
+    background: #3f6388;
+    color:#fff;
+}
+.foot_logo{
+    display: flex;
+    align-items: center;
+}
+ .foot_logo p{
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 10px;
+    color: #042749;
+}
+.foot_logo span{
+    color: #ff627d;
+    font-weight: 700;
+    font-size: 35px;
+}
+.foot_item p{
+    font-size: 16px;
+    font-weight: 500;   
+    padding: 25px 0; 
+}
+.foot_icon h4{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.socialicon i{
+    height: 30px;
+    width: 30px;
+    border:1px solid white;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.socialicon i:hover {
+    border:1px solid #ff627d;
+    color: #ff627d;
+}
+/* footer 2nd section */
+.foot_item h3{
+    font-weight: 700;
+    padding-bottom: 40px;
+    font-family: 'Ysabeau Infant', sans-serif; 
+    text-align: center;
+}
+.foot_item ul li{
+    margin-left: 20px;
+    position:relative;
+}
+.foot_item ul li i{
+    position: absolute;
+    left: -35px;top: 15px;
+    font-size: 18px;
+}
+.foot_item ul li:hover i{
+    color:#e07788;
+}
+.foot_item ul li a{    
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.foot_cont ul{
+    margin-left: 30px;
+}
+/* 3rd section */
+.foot_services{
+    margin-bottom: 68px;
+}
+.foot_services ul{
+  margin-left: 30px;
+}
+.foot_services ul li a:hover{
+    color:#e07788;
+}
+
+/* 4th section footer */
+
+
+.foot_support h3{
+    padding-right:80px;
+}
+
+.foot_support ul li a:hover{
+    color:#e07788;
+}
+/* ---------footer end-------- */

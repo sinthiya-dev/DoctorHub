@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* menubar */
 .menu_bg{
     padding:0 ;
-    background:#5d8a9d;
+    background: #ffffff;
     position: fixed;    
     left:0;
     top: 20px;
@@ -58,7 +58,6 @@ h1,h2,h3,h4,h5,h6,p{
  }
  .nav_logo a img{
     margin-left: -10px;
-    padding: 5px 0;
  }
  .nav_logo a{
     display: flex;
@@ -79,7 +78,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .menu_bg ul li a{
-    color: #fff !important;
+    color: #000 !important;
     font-size: 16px !important;
 }
 .menu_bg ul li a:hover{
@@ -528,123 +527,3 @@ footer{
     color:#e07788;
 }
 /* ---------footer end-------- */
-
-/*********get consultant css******/
-/* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-#registration{
-    padding-top: 100px;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url(../images/regpic.jpg) no-repeat center / cover;
-}
-.container .form {
-  margin-top: 0px;
-}
-.reg_inner h3{
-    margin-bottom: 30px;
-    text-align: center;
-  color: #fff;
-  font-family: 'Ysabeau Infant', sans-serif !important;
-  font-weight: 700;
-  padding: 10px 8px;
-  background: #e07788;
-}
-.reg_inner h4{
-  color: #fff;
-  font-family: 'Ysabeau Infant', sans-serif !important;
-  font-weight: 400;
-  /* padding: 10px 8px; */
-  /* background: #e07788; */
-}
-.form .input-box {
-  width: 100%;
-  margin-top: 10px;
-}
-.input-box label {
-  color: #fff;
-}
-.form :where(.input-box input, .select-box) {
-  position: relative;
-  height: 40px;
-  width: 100%;
-  outline: none;
-  font-size: 16px;
-  color: #a6a6a6;
-  margin-top: 8px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 0 15px;
-}
-.input-box input:focus {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-.form .column {
-  display: flex;
-  column-gap: 15px;
-}
-.form .gender-box {
-  margin-top: 20px;
-  padding: 20px 0;
-  border-top: 1px solid #bab8b8;
-  border-bottom: 1px solid #bab8b8;
-}
-.gender-box h5{
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 8px;
-}
-.form :where(.gender-option, .gender) {
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-  flex-wrap: wrap;
-}
-.form .gender {
-  column-gap: 5px;
-}
-.gender input {
-  accent-color: rgb(130, 106, 251);
-}
-.form :where(.gender input, .gender label) {
-  cursor: pointer;
-}
-.gender label {
-  color: #fff;
-}
-.payment {
-    display: flex;
-}
-.payment img{
-    height:60px;
-    width: 60px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-.form button {
-  height: 55px;
-  width: 100%;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-top: 30px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  background: rgb(130, 106, 251);
-}
-.form button:hover {
-  background: rgb(88, 56, 250);
-}
-/*Responsive*/
-@media screen and (max-width: 500px) {
-  .form .column {
-    flex-wrap: wrap;
-  }
-  .form :where(.gender-option, .gender) {
-    row-gap: 15px;
-  }
-}
