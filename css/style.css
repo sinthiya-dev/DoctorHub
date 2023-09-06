@@ -341,14 +341,27 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* user html css */
-.pro_pic img{
+.pro_pic{
+    position: relative;
+    text-align: center;
+  }
+  .pro_pic .pro_btn{
+    position: absolute;
+    left: 60px;bottom: -10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 40px;
+    color: #e07788;
+  }
+  .pro_pic img{
     border: 5px solid #2e6092;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-}
+  }
 .pro_info{
     text-align: right;
     position: relative;
@@ -373,7 +386,7 @@ h1,h2,h3,h4,h5,h6,p{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    text-align: right;
+    /* text-align: right; */
 }
 /*-----------nav end---------- */
 

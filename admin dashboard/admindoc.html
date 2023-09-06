@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
      
     <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/docall.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -75,49 +76,9 @@
             <a href="#" class="sidebar-toggler flex-shrink-0">
                 <i class="fa fa-bars"></i>
             </a>
-            <form class="d-none d-md-flex ms-4">
-                <input class="form-control bg-dark border-0" type="search" placeholder="Search">
-            </form>
+          <a href="docadd.html"><button class="add_doc_btn mx-4"> <i class="fa fa-plus"></i>Doctor</button></a>
             <div class="navbar-nav align-items-center ms-auto">
-                <!-- <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                        <i class="fa fa-envelope me-lg-2"></i>
-                        <span class="d-none d-lg-inline-flex">Message</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                        <a href="#" class="dropdown-item">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="ms-2">
-                                    <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                    <small>15 minutes ago</small>
-                                </div>
-                            </div>
-                        </a>
-                        <hr class="dropdown-divider">
-                        <a href="#" class="dropdown-item">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="ms-2">
-                                    <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                    <small>15 minutes ago</small>
-                                </div>
-                            </div>
-                        </a>
-                        <hr class="dropdown-divider">
-                        <a href="#" class="dropdown-item">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="ms-2">
-                                    <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                    <small>15 minutes ago</small>
-                                </div>
-                            </div>
-                        </a>
-                        <hr class="dropdown-divider">
-                        <a href="#" class="dropdown-item text-center">See all message</a>
-                    </div>
-                </div> -->
+            
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         <i class="fa fa-bell me-lg-2"></i>
@@ -143,22 +104,13 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <!-- <a href="#" class="nav-link dropdown-toggle"  data-bs-toggle="dropdown"> --><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                        <i class="fa-solid fa-gear"></i></i>
-                        <span class="d-none d-lg-inline-flex"></span>
-                    
-                        <!-- <button class="btn bg-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <div class="nav-item dropdown">
+                        <a href="userupdate.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex"></span>
+                        </a>
                         
-                        </button>
-                        <div class="offcanvas offcanvas-top" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">  <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                                <div class="offcanvas-body">
-                                    <p>htfgjhgj</p>
-                                           </div>
-                        </div> -->
-                    </a>
+                    </div>
                     
                 </div>
             </div>
@@ -167,22 +119,237 @@
 
         <!-- doc portfolio -->
         <div class="container-fluid my-2">
-            <div class="col-lg-3 text-center">
+            <div class="row m-1 d-wrap justify-content-between">
+
+             <div class="col-lg-3  doc_port_main text-center">
                 <div class="doc_port_img">
                     <img src="images/doc1.jpg" width="30%"alt="">
                 </div>
                 <div class="port_content">
-                    <h3>Dr. Afia Binti</h3>
-                    <h6>Dentist</h6>
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
                     <button>View Profile</button>
-                    <p>jdhfusfhjs,dhaka,bd</p>
                     <div class="port_icon">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
                         <i class="fa-brands fa-whatsapp"></i>
                     </div>
                     
                 </div>
+            </div>
+
+             <div class="col-lg-3  doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <div class="col-lg-3 doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <div class="col-lg-3 doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <div class="col-lg-3 doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <div class="col-lg-3 doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <div class="col-lg-3 doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <div class="col-lg-3 doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <div class="col-lg-3 doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <div class="col-lg-3 doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <div class="col-lg-3 doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <div class="col-lg-3 doc_port_main text-center">
+                <div class="doc_port_img">
+                    <img src="images/doc1.jpg" width="30%"alt="">
+                </div>
+                <div class="port_content">
+                    <h4>Dr. Afia Binti</h4>
+                    <sub><i>Dentist</i></sub>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur  elit.</p>
+                    <button>View Profile</button>
+                    <div class="port_icon">
+                        <i class="fa-brands fa-facebook"></i><br>
+                        <i class="fa-brands fa-instagram"></i><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    
+                </div>
+            </div>
+           
+
             </div>
         </div>
                  <!-- Footer Start -->

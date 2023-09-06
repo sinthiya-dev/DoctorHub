@@ -25,6 +25,10 @@ ul,ol{
   --light: #e27a46;
   --dark: #042749;
 }
+
+/* .adm_btn{
+  text
+} */
 .back_2_top{
   position: fixed;
   display: none;
@@ -271,6 +275,68 @@ ul,ol{
 .content_navbar{
   background: #042749;
 }
+/* user profile update start */
+.pro_pic{
+  position: relative;
+  text-align: center;
+}
+.pro_pic .pro_btn{
+  position: absolute;
+  left: 60px;bottom: -10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 40px;
+  color: #e07788;
+}
+.pro_pic img{
+  border: 5px solid #2e6092;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.pro_info{
+  text-align: right;
+  position: relative;
+}
+.pro_info::after{
+  content: "";
+  height: 90%;
+  width: 5px;
+  background: #e07788;
+  position: absolute;
+  left: 0;top: 0;
+}
+.pro_info ul li{
+  margin-bottom: 20px;
+}
+.pro_info .user_input,.pro_info textarea{
+  padding: 2px 10px;
+  margin-left: 30px;
+  border: 2px solid #714cf8;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  /* text-align: right; */
+}
+.submit_btn{
+  background: #5936d8;
+  margin-top: 20px;
+  padding: 8px 30px;
+  border: none;
+  color:#fff ;
+  font-size: 18px;
+}
+.submit_btn:hover{
+  background: #ff627d;    
+  color: #fff;
+}
+/* user profile update end*/
+
 
 /*** activity***/
 
