@@ -20,13 +20,13 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* heading */
-.back_2_top{
+/* .back_2_top{
    position: fixed;
-   /* display: none; */
+   display: none; 
    right: 45px;
    bottom: 45px;
    z-index: 99;
-}
+} */
   
  /*** Spinner ***/
  #spinner {
@@ -379,7 +379,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 /*-----------banner start---------- */
 #banner{
-    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/doclogo.jpg) no-repeat center / cover;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/doclogo.jpg) no-repeat center / cover;
     padding: 200px 0;
 }
 .ban_txt h1{
@@ -393,10 +393,24 @@ h1,h2,h3,h4,h5,h6,p{
 .ban_txt p{
     padding: 10px 50px;
     color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
-/* ----search now section---- */
+.app_history{
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid transparent;
+    background: #b9364c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Ysabeau Infant', sans-serif;
+
+}
+.app_history:hover{
+    border: 1px solid #fff;
+}
+/* ----search section---- */
 #search{
     position: relative;
 }
@@ -969,3 +983,27 @@ footer{
     color:#e07788;
 }
 /* ---------footer end-------- */
+
+
+/* history css */
+
+.his_main h3{
+  margin-top: 3%;
+   padding-left:12%;
+   margin-bottom: 40px;
+   font-family: 'Ysabeau Infant', sans-serif; 
+   font-weight: 700;
+   border-bottom:3px double #042749;
+}
+/* .his_inner{
+    padding: 30px 50px;
+    background: #c0dffe;
+    border-bottom: 1px solid #000;
+} */
+.re_btn{
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid #fff;
+    background: #967bf6;
+
+}
